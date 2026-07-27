@@ -8,5 +8,5 @@ docs_url = "https://github.com/imbue-openhost/openhost-lila#readme"
 tags = ["chess", "games", "lichess", "tournaments", "puzzles"]
 categories = ["entertainment"]
 
-openhost_integration_score = 3
-openhost_integration_score_explanation = "Zone owner is auto-logged in as admin with zero clicks and non-owners are bounced to the zone login; the admin password is written to a 0600 credentials file in app data and any additional players need Lila-local accounts."
+openhost_integration_score = 4
+openhost_integration_score_explanation = "Zone owner is auto-logged in as admin with zero clicks; shared challenge/game links work for anonymous guests without an OpenHost account, and AI/bot games play. Short of 5 because extra registered players still need Lila-local accounts."
