@@ -1,0 +1,12 @@
+[app]
+name = "lila"
+title = "Lichess"
+description = "Self-hosted Lichess (Lila) chess server with one-click SSO: play, do puzzles, run tournaments, and analyze games. Pre-seeded so the lobby and leaderboards aren't empty."
+repo_url = "https://github.com/imbue-openhost/openhost-lila"
+website_url = "https://lichess.org"
+docs_url = "https://github.com/imbue-openhost/openhost-lila#readme"
+tags = ["chess", "games", "lichess", "tournaments", "puzzles"]
+categories = ["entertainment"]
+
+openhost_integration_score = 3
+openhost_integration_score_explanation = "Zone owner is auto-logged in as admin with zero clicks and non-owners are bounced to the zone login; the admin password is written to a 0600 credentials file in app data and any additional players need Lila-local accounts."
