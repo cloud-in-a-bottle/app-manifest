@@ -251,6 +251,17 @@ def main() -> int:
         print(f"{output_path} is up to date")
         return 0
 
+    # Preserve catalog.json (and its generated_at) when the feed content is
+    # unchanged, so no-op runs don't churn the timestamp or the git diff.
+    try:
+        with open(output_path) as f:
+            existing = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        existing = None
+    if existing is not None and stable_copy(existing) == fresh_stable:
+        print(f"{output_path} is already up to date")
+        return 0
+
     feed["generated_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     with open(output_path, "w") as f:
         json.dump(feed, f, indent=2)

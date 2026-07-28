@@ -54,9 +54,23 @@ and may only be set when a score is set.
 
 ## Adding an app
 
-1. Create `apps/<short-name>/app.toml` with the fields above.
-2. Run `python3 generate.py` to regenerate `catalog.json`.
-3. Commit both the new `app.toml` and the updated `catalog.json`.
+Edit `apps/<name>/app.toml` and CI regenerates `catalog.json`.
+
+1. Add or edit `apps/<short-name>/app.toml` with the fields above (local checkout or catalog's add app autofill).
+2. Open a pull request.
+3. CI runs `generate.py`, which validates the TOML and regenerates
+   `catalog.json`:
+   - **Branch in this repo:** the fresh `catalog.json` is committed back onto
+     your PR branch automatically.
+   - **Fork:** CI can't push to your fork, so it only validates; `catalog.json`
+     is regenerated on `main` when the PR merges.
+
+   If the TOML is invalid (bad name, unknown category, malformed score) the
+   check fails with the reason.
+
+If you do have a local checkout, you can regenerate ahead of CI with
+`python3 generate.py` and commit `catalog.json` yourself — optional, not
+required.
 
 ## Development
 
@@ -66,13 +80,14 @@ and may only be set when a score is set.
 python3 generate.py
 ```
 
-### Check the feed is up to date (used by CI)
+### Check the feed is up to date
 
 ```bash
 python3 generate.py --check
 ```
 
-Exits non-zero if `catalog.json` is stale relative to the TOML sources.
+Exits non-zero if `catalog.json` is stale relative to the TOML sources. Used by
+the pre-commit hook; CI regenerates instead of checking (see below).
 
 ### Pre-commit hook
 
@@ -82,6 +97,13 @@ Install [pre-commit](https://pre-commit.com/) and run:
 pre-commit install
 ```
 
-This installs a hook that runs `generate.py --check` before each commit and blocks stale `catalog.json` from being committed.
+This installs a hook that runs `generate.py --check` before each commit and
+blocks stale `catalog.json` from being committed, so a local checkout stays in
+sync without waiting for CI.
 
-CI runs the same check on every PR.
+### CI
+
+The `Catalog` workflow runs `generate.py` on every PR and on pushes to `main`.
+It validates the TOML and regenerates `catalog.json` — committing it back to the
+PR branch (same-repo) or to `main` on merge (forks) — so contributors never have
+to run the generator by hand.

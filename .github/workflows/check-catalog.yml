@@ -1,17 +1,83 @@
-name: Check catalog.json
+name: Catalog
+
+# Contributors only edit apps/<name>/app.toml (works entirely from the GitHub
+# web UI). CI runs generate.py so the generated catalog.json never has to be
+# produced by hand:
+#   - On a PR from a branch in this repo, the regenerated catalog.json is
+#     committed back onto the PR branch.
+#   - On a PR from a fork (where Actions cannot push to the fork branch), the
+#     job only validates; catalog.json is reconciled on merge by the main job.
+#   - On push to main, catalog.json is regenerated and committed if stale,
+#     which is what catches the fork case.
+# In every case generate.py also validates the TOML and fails the job on
+# invalid input (bad name, unknown category, malformed score).
 
 on:
   pull_request:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+
 jobs:
-  check:
+  pr:
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
+    concurrency:
+      group: catalog-pr-${{ github.event.pull_request.number }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Regenerate catalog.json (validates the TOML)
+        run: python3 generate.py
+      - name: Commit catalog.json to the PR branch
+        if: github.event.pull_request.head.repo.full_name == github.repository
+        run: |
+          if git diff --quiet -- catalog.json; then
+            echo "catalog.json already up to date"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog.json
+          git commit -m "Regenerate catalog.json"
+          git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
+      - name: Fork PR notice
+        if: github.event.pull_request.head.repo.full_name != github.repository
+        run: |
+          if ! git diff --quiet -- catalog.json; then
+            echo "::notice::catalog.json is stale; it will be regenerated on this repo's main branch when the PR is merged."
+          fi
+
+  reconcile:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: catalog-reconcile-main
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Verify catalog.json is up to date
-        run: python3 generate.py --check
+      - name: Regenerate catalog.json (validates the TOML)
+        run: python3 generate.py
+      - name: Commit catalog.json to main
+        run: |
+          if git diff --quiet -- catalog.json; then
+            echo "catalog.json already up to date"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog.json
+          git commit -m "Regenerate catalog.json [skip ci]"
+          git pull --rebase origin main
+          git push
