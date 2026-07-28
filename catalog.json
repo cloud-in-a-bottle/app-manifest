@@ -66,6 +66,30 @@
       "openhost_integration_score_explanation": "Requires in-app login but provides services"
     },
     {
+      "name": "cap",
+      "title": "Cap",
+      "description": "Open-source Loom alternative \u2014 record your screen in the browser and share links, fully self-hosted.",
+      "repo_url": "https://github.com/CarlKho-Minerva/openhost-cap",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "screen-recording",
+        "video",
+        "loom-alternative",
+        "sharing",
+        "self-hosted"
+      ],
+      "categories": [
+        "utility",
+        "entertainment",
+        "privacy"
+      ],
+      "website_url": "https://cap.so",
+      "docs_url": "https://github.com/CarlKho-Minerva/openhost-cap#readme",
+      "openhost_integration_score": 2,
+      "openhost_integration_score_explanation": "The owner reaches Cap through zone auth and share links play for accountless guests, but Cap keeps its own email-code login on top, so the owner signs in manually rather than via OpenHost SSO."
+    },
+    {
       "name": "claude-workbench",
       "title": "Claude Workbench",
       "description": "Tabbed in-browser terminals (xterm.js) preloaded with Anthropic's Claude Code CLI and common developer tools, for coding and debugging with an AI agent.",
@@ -755,5 +779,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-27T21:57:03Z"
+  "generated_at": "2026-07-28T19:48:50Z"
 }
