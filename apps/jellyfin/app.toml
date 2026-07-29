@@ -1,0 +1,12 @@
+[app]
+name = "jellyfin"
+title = "Jellyfin"
+description = "Free software media server for streaming your own movies, TV, music, and photos to any device."
+repo_url = "https://github.com/imbue-openhost/openhost-jellyfin"
+website_url = "https://jellyfin.org"
+docs_url = "https://github.com/imbue-openhost/openhost-jellyfin#readme"
+tags = ["media", "streaming", "movies", "music", "self-hosted"]
+categories = ["entertainment", "privacy"]
+
+openhost_integration_score = 3
+openhost_integration_score_explanation = "Owner is auto-signed into the web UI with zero clicks via a token shim, but invited users and third-party Jellyfin client apps still sign in with app-local accounts."

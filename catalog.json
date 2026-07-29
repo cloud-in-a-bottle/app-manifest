@@ -272,6 +272,29 @@
       "openhost_integration_score_explanation": "Runs and persists pages correctly, but the editor does no OpenHost SSO of its own; owner access relies on the router gating the admin web port. The public capsule is anonymous over Tor."
     },
     {
+      "name": "jellyfin",
+      "title": "Jellyfin",
+      "description": "Free software media server for streaming your own movies, TV, music, and photos to any device.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-jellyfin",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "media",
+        "streaming",
+        "movies",
+        "music",
+        "self-hosted"
+      ],
+      "categories": [
+        "entertainment",
+        "privacy"
+      ],
+      "website_url": "https://jellyfin.org",
+      "docs_url": "https://github.com/imbue-openhost/openhost-jellyfin#readme",
+      "openhost_integration_score": 3,
+      "openhost_integration_score_explanation": "Owner is auto-signed into the web UI with zero clicks via a token shim, but invited users and third-party Jellyfin client apps still sign in with app-local accounts."
+    },
+    {
       "name": "jitsi",
       "title": "Jitsi Meet",
       "description": "Scalable video conferencing with an SFU (Jitsi Videobridge) \u2014 anyone with the URL can join a meeting.",
@@ -315,6 +338,29 @@
       "docs_url": "https://github.com/imbue-openhost/openhost-lila#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Zone owner is auto-logged in as admin with zero clicks; shared challenge/game links work for anonymous guests without an OpenHost account, and AI/bot games play. Short of 5 because extra registered players still need Lila-local accounts."
+    },
+    {
+      "name": "limesurvey",
+      "title": "LimeSurvey",
+      "description": "Self-hosted survey and questionnaire platform with a bundled database, for building and running online surveys.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-LimeSurvey",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "surveys",
+        "forms",
+        "questionnaires",
+        "polls",
+        "self-hosted"
+      ],
+      "categories": [
+        "productivity",
+        "utility"
+      ],
+      "website_url": "https://www.limesurvey.org",
+      "docs_url": "https://github.com/imbue-openhost/openhost-LimeSurvey#readme",
+      "openhost_integration_score": 4,
+      "openhost_integration_score_explanation": "Owner is auto-signed into the admin panel via the zone-owner header and anonymous respondents reach public surveys without a login, but any extra admin users you add use app-local passwords."
     },
     {
       "name": "lyftr",
@@ -779,5 +825,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-28T19:48:50Z"
+  "generated_at": "2026-07-29T18:06:11Z"
 }
