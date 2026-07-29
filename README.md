@@ -89,6 +89,31 @@ python3 generate.py --check
 Exits non-zero if `catalog.json` is stale relative to the TOML sources. Used by
 the pre-commit hook; CI regenerates instead of checking (see below).
 
+### Verify repos
+
+```bash
+python3 generate.py --verify-repos            # all apps
+python3 generate.py --verify-repos lila forgejo  # only these apps
+```
+
+Queries the GitHub API to confirm each app's `repo_url` points at a reachable,
+public repository that contains an `openhost.toml` manifest at its root (on
+`repo_ref`, if pinned). Exits non-zero if a repo is missing/private or the
+manifest is absent. Network errors (including rate limits) warn but don't fail.
+Kept out of the default generate/`--check` path so local runs stay offline. On a
+PR, CI verifies only the apps whose `app.toml` changed, so it scales with the
+diff rather than the catalog.
+
+**Auth.** The unauthenticated GitHub API allows 60 requests/hr, but a full scan
+makes up to two requests per app, so it needs a token. Set `GITHUB_TOKEN` (or
+`GH_TOKEN`) to a token — any token works; it only lifts the rate limit and needs
+no access to the apps' repos. Locally, `GITHUB_TOKEN=$(gh auth token) python3
+generate.py --verify-repos` works.
+
+**Full catalog scan.** Run the `Catalog` workflow manually from the Actions tab
+(`workflow_dispatch`) to scan every repo — it uses the built-in `GITHUB_TOKEN`,
+so nothing to configure. The optional `apps` input scans only the named apps.
+
 ### Pre-commit hook
 
 Install [pre-commit](https://pre-commit.com/) and run:
