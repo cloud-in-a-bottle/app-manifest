@@ -1,0 +1,12 @@
+[app]
+name = "limesurvey"
+title = "LimeSurvey"
+description = "Self-hosted survey and questionnaire platform with a bundled database, for building and running online surveys."
+repo_url = "https://github.com/imbue-openhost/openhost-LimeSurvey"
+website_url = "https://www.limesurvey.org"
+docs_url = "https://github.com/imbue-openhost/openhost-LimeSurvey#readme"
+tags = ["surveys", "forms", "questionnaires", "polls", "self-hosted"]
+categories = ["productivity", "utility"]
+
+openhost_integration_score = 4
+openhost_integration_score_explanation = "Owner is auto-signed into the admin panel via the zone-owner header and anonymous respondents reach public surveys without a login, but any extra admin users you add use app-local passwords."
