@@ -76,9 +76,13 @@ def check_repo_public(slug: str, token: str = "") -> tuple[bool, str]:
             return False, "not found or private"
         if e.code in (403, 429):
             return True, f"rate limited (HTTP {e.code}); skipped"
-        return True, f"HTTP {e.code}; skipped"
+        if e.code >= 500:
+            return True, f"server error (HTTP {e.code}); skipped"
+        return False, f"HTTP {e.code}"
     except urllib.error.URLError as e:
         return True, f"unreachable: {e.reason}; skipped"
+    except (OSError, json.JSONDecodeError) as e:
+        return True, f"unreachable: {e}; skipped"
 
 
 def check_manifest(slug: str, ref: str, token: str = "") -> tuple[bool, str]:
@@ -99,9 +103,13 @@ def check_manifest(slug: str, ref: str, token: str = "") -> tuple[bool, str]:
             return False, f"missing openhost.toml{f'@{ref}' if ref else ''}"
         if e.code in (403, 429):
             return True, f"rate limited (HTTP {e.code}); manifest not checked"
-        return True, f"HTTP {e.code}; manifest not checked"
+        if e.code >= 500:
+            return True, f"server error (HTTP {e.code}); manifest not checked"
+        return False, f"HTTP {e.code}"
     except urllib.error.URLError as e:
         return True, f"unreachable: {e.reason}; manifest not checked"
+    except OSError as e:
+        return True, f"unreachable: {e}; manifest not checked"
 
 
 def verify_repos(feed: dict, names: list[str] | None = None) -> int:
@@ -113,6 +121,13 @@ def verify_repos(feed: dict, names: list[str] | None = None) -> int:
     if names:
         wanted = set(names)
         apps = [a for a in apps if a["name"] in wanted]
+        missing = sorted(wanted - {a["name"] for a in apps})
+        if missing:
+            print(
+                f"error: no catalog app named: {', '.join(missing)}",
+                file=sys.stderr,
+            )
+            return 1
     failures: list[str] = []
     for app in apps:
         slug = repo_slug(app["repo_url"])
@@ -354,6 +369,8 @@ def main() -> int:
         help="With --verify-repos, only check these app names (default: all).",
     )
     args = parser.parse_args()
+    if args.apps and not args.verify_repos:
+        parser.error("app names are only accepted with --verify-repos")
 
     root = os.path.dirname(os.path.abspath(__file__))
     output_path = os.path.join(root, "catalog.json")
