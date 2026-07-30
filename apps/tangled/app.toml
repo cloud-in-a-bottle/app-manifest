@@ -1,0 +1,12 @@
+[app]
+name = "tangled"
+title = "Tangled Knot"
+description = "Self-hosted Tangled knot: the git data server for Tangled (tangled.org), the AT-Protocol-based social coding platform. Host your own repositories and federate with the Tangled network — your identity is your ATProto/Bluesky DID, the AppView provides the web UI and issues/PRs as ATProto records, and your knot holds the actual git data. Clone over HTTPS, push over SSH."
+repo_url = "https://github.com/imbue-openhost/openhost-tangled"
+website_url = "https://tangled.org"
+docs_url = "https://github.com/imbue-openhost/openhost-tangled#readme"
+tags = ["git", "atproto", "federation", "forge", "bluesky"]
+categories = ["development"]
+
+openhost_integration_score = 2
+openhost_integration_score_explanation = "Deploys and persists git data cleanly, with an owner-gated in-app form to set your ATProto DID (no OpenHost SSO — the knot has no browser login). Setup needs external steps: a Bluesky/ATProto account and a verify click on tangled.org to federate."
