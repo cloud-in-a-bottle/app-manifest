@@ -739,6 +739,28 @@
       "openhost_integration_score_explanation": "The owner reaches the app through zone auth and can share group links with guests who need no OpenHost account, but Spliit has no user accounts so there is no real owner SSO to speak of."
     },
     {
+      "name": "unciv",
+      "title": "Unciv Multiplayer Server",
+      "description": "Self-hosted multiplayer server for Unciv, the open-source Civ V remake. Host the game-save backend so you and your friends can play online multiplayer from your Unciv desktop/Android clients instead of the flaky shared public server. Point your client's Server address at this app's URL.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-unciv",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "unciv",
+        "civ",
+        "strategy",
+        "games",
+        "multiplayer"
+      ],
+      "categories": [
+        "entertainment"
+      ],
+      "website_url": "https://github.com/yairm210/Unciv",
+      "docs_url": "https://github.com/imbue-openhost/openhost-unciv#readme",
+      "openhost_integration_score": 3,
+      "openhost_integration_score_explanation": "Owner gets a zero-click, SSO-gated landing page with the server URL to paste into their Unciv client; the game-save API is public (game clients can't do browser SSO) and saves persist. It's a headless game backend, so there's no in-app owner session."
+    },
+    {
       "name": "uptime-kuma",
       "title": "Uptime Kuma",
       "description": "Self-hosted uptime monitoring with HTTP, TCP, DNS, and ping checks plus status pages.",
@@ -825,5 +847,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-29T18:06:11Z"
+  "generated_at": "2026-07-30T02:57:48Z"
 }
