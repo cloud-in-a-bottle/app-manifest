@@ -1,0 +1,12 @@
+[app]
+name = "overleaf"
+title = "Overleaf"
+description = "Overleaf Community Edition: a self-hosted, collaborative online LaTeX editor with real-time editing and in-browser PDF compilation, with a bundled database."
+repo_url = "https://github.com/imbue-openhost/openhost-overleaf"
+website_url = "https://www.overleaf.com"
+docs_url = "https://github.com/imbue-openhost/openhost-overleaf#readme"
+tags = ["latex", "editor", "writing", "collaboration", "academic", "self-hosted"]
+categories = ["productivity", "publishing"]
+
+openhost_integration_score = 4
+openhost_integration_score_explanation = "Zone owner is auto-signed into the Overleaf admin with zero clicks via the owner header, and project links can be shared publicly with collaborators who have no OpenHost account, but any named Overleaf accounts you add use app-local passwords created via the admin panel."
