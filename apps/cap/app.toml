@@ -4,9 +4,10 @@ title = "Cap"
 description = "Open-source Loom alternative — record your screen in the browser and share links, fully self-hosted."
 repo_url = "https://github.com/CarlKho-Minerva/openhost-cap"
 website_url = "https://cap.so"
+icon_url = "https://github.com/CapSoftware.png"
 docs_url = "https://github.com/CarlKho-Minerva/openhost-cap#readme"
 tags = ["screen-recording", "video", "loom-alternative", "sharing", "self-hosted"]
 categories = ["utility", "entertainment", "privacy"]
 
-openhost_integration_score = 2
-openhost_integration_score_explanation = "The owner reaches Cap through zone auth and share links play for accountless guests, but Cap keeps its own email-code login on top, so the owner signs in manually rather than via OpenHost SSO."
+openhost_integration_score = 4
+openhost_integration_score_explanation = "Owner is auto-logged-in with zero clicks via a trusted-proxy provider consuming X-OpenHost-Is-Owner, signed into a first-boot-seeded account (no email code). Public share links pass through for guests. Not a 5: invited teammates still use Cap's email-code login."
