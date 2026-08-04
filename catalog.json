@@ -66,6 +66,30 @@
       "openhost_integration_score_explanation": "Requires in-app login but provides services"
     },
     {
+      "name": "calibre-web",
+      "title": "Calibre-Web",
+      "description": "Self-hosted web app for browsing, reading, and downloading your ebook library, with an OPDS feed, Kobo sync, and per-user access \u2014 a clean web front end for a Calibre library.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-calibre-web",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "ebooks",
+        "books",
+        "reading",
+        "library",
+        "opds",
+        "self-hosted"
+      ],
+      "categories": [
+        "publishing",
+        "entertainment"
+      ],
+      "website_url": "https://github.com/janeczku/calibre-web",
+      "docs_url": "https://github.com/imbue-openhost/openhost-calibre-web#readme",
+      "openhost_integration_score": 3,
+      "openhost_integration_score_explanation": "Zone owner is auto-logged in as admin via the owner header, but invited readers still sign in with Calibre-Web-local password accounts."
+    },
+    {
       "name": "cap",
       "title": "Cap",
       "description": "Open-source Loom alternative \u2014 record your screen in the browser and share links, fully self-hosted.",
@@ -915,5 +939,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-08-04T18:52:14Z"
+  "generated_at": "2026-08-04T23:41:42Z"
 }
