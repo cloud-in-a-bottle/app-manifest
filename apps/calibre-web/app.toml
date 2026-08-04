@@ -1,0 +1,12 @@
+[app]
+name = "calibre-web"
+title = "Calibre-Web"
+description = "Self-hosted web app for browsing, reading, and downloading your ebook library, with an OPDS feed, Kobo sync, and per-user access — a clean web front end for a Calibre library."
+repo_url = "https://github.com/imbue-openhost/openhost-calibre-web"
+website_url = "https://github.com/janeczku/calibre-web"
+docs_url = "https://github.com/imbue-openhost/openhost-calibre-web#readme"
+tags = ["ebooks", "books", "reading", "library", "opds", "self-hosted"]
+categories = ["publishing", "entertainment"]
+
+openhost_integration_score = 3
+openhost_integration_score_explanation = "Zone owner is auto-logged in as admin via the owner header, but invited readers still sign in with Calibre-Web-local password accounts."
