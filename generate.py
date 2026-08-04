@@ -53,7 +53,7 @@ def repo_slug(repo_url: str) -> str:
     """Extract the lowercased ``org/name`` slug from a repo URL, ignoring
     scheme, host, a trailing ``.git``, and trailing slashes."""
     path = re.sub(r"^[a-z]+://[^/]+/", "", repo_url.strip(), flags=re.IGNORECASE)
-    path = re.sub(r"\.git$", "", path).strip("/").lower()
+    path = re.sub(r"\.git$", "", path.strip("/")).strip("/").lower()
     return "/".join(path.split("/")[-2:])
 
 

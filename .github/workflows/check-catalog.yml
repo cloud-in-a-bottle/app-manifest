@@ -54,7 +54,7 @@ jobs:
           base="${{ github.event.pull_request.base.ref }}"
           git remote add upstream "https://github.com/${{ github.repository }}.git" 2>/dev/null || true
           git fetch --quiet upstream "$base"
-          names=$(git diff --name-only "upstream/$base...HEAD" -- 'apps/*/app.toml' | cut -d/ -f2 | sort -u)
+          names=$(git diff --name-only --diff-filter=d "upstream/$base...HEAD" -- 'apps/*/app.toml' | cut -d/ -f2 | sort -u)
           if [ -z "$names" ]; then
             echo "no app.toml changes; nothing to verify"
             exit 0
