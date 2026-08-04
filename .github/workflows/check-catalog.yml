@@ -11,11 +11,22 @@ name: Catalog
 #     which is what catches the fork case.
 # In every case generate.py also validates the TOML and fails the job on
 # invalid input (bad name, unknown category, malformed score).
+#
+# On a PR, only the repos whose app.toml changed are checked for being public,
+# so verification scales with the size of the diff, not the catalog. A full
+# scan of every repo is available on demand via the workflow_dispatch "scan"
+# job (authenticated by GITHUB_TOKEN to clear the unauthenticated rate limit).
 
 on:
   pull_request:
   push:
     branches: [main]
+  workflow_dispatch:
+    inputs:
+      apps:
+        description: "Apps to scan, space-separated (blank = whole catalog)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -32,11 +43,26 @@ jobs:
         with:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Regenerate catalog.json (validates the TOML)
         run: python3 generate.py
+      - name: Verify changed repos are public
+        run: |
+          base="${{ github.event.pull_request.base.ref }}"
+          git remote add upstream "https://github.com/${{ github.repository }}.git" 2>/dev/null || true
+          git fetch --quiet upstream "$base"
+          names=$(git diff --name-only --diff-filter=d "upstream/$base...HEAD" -- 'apps/*/app.toml' | cut -d/ -f2 | sort -u)
+          if [ -z "$names" ]; then
+            echo "no app.toml changes; nothing to verify"
+            exit 0
+          fi
+          echo "verifying changed apps: $names"
+          python3 generate.py --verify-repos $names
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Commit catalog.json to the PR branch
         if: github.event.pull_request.head.repo.full_name == github.repository
         run: |
@@ -81,3 +107,17 @@ jobs:
           git commit -m "Regenerate catalog.json [skip ci]"
           git pull --rebase origin main
           git push
+
+  scan:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Scan catalog repos are public with a manifest
+        run: python3 generate.py --verify-repos $APPS
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          APPS: ${{ inputs.apps }}

@@ -15,11 +15,20 @@ import os
 import re
 import sys
 import tomllib
+import urllib.error
+import urllib.parse
+import urllib.request
 from datetime import datetime, timezone
 
 # App names must be lowercase alphanumeric with optional interior hyphens.
 # This matches OpenHost's app_name validation.
 _NAME_PATTERN = re.compile(r"^[a-z0-9]([a-z0-9-]*[a-z0-9])?$")
+
+# repo_url must be a GitHub repo: https://github.com/<org>/<repo>, with an
+# optional trailing ``.git`` or ``/``. repo_slug reads org/repo from these groups.
+_REPO_URL_PATTERN = re.compile(
+    r"^https://github\.com/(?P<org>[A-Za-z0-9-]+)/(?P<repo>[A-Za-z0-9._-]+?)(?:\.git)?/?$"
+)
 
 VALID_CATEGORIES = {
     "ai",
@@ -38,6 +47,138 @@ VALID_CATEGORIES = {
 def load_toml(path: str) -> dict:
     with open(path, "rb") as f:
         return tomllib.load(f)
+
+
+def repo_slug(repo_url: str) -> str:
+    """Extract the lowercased ``org/repo`` slug from a _REPO_URL_PATTERN URL."""
+    m = _REPO_URL_PATTERN.match(repo_url.strip())
+    if not m:
+        raise ValueError(f"not a GitHub repo URL: {repo_url!r}")
+    return f"{m['org']}/{m['repo']}".lower()
+
+
+def _github_get(url: str, token: str = "") -> tuple[int, str]:
+    """GET a GitHub API URL. Returns (status, body): status is the HTTP code, or
+    0 on a network error with body set to the reason; body is the text on 200."""
+    req = urllib.request.Request(url)
+    req.add_header("Accept", "application/vnd.github+json")
+    if token:
+        req.add_header("Authorization", f"Bearer {token}")
+    try:
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            return 200, resp.read().decode()
+    except urllib.error.HTTPError as e:
+        return e.code, str(e)
+    except urllib.error.URLError as e:
+        return 0, str(e.reason)
+    except OSError as e:
+        return 0, str(e)
+
+
+def _skip(status: int, detail: str, note: str) -> tuple[bool, str]:
+    """Map a status that does NOT prove failure to a (True, warning) skip.
+    Callers handle 200 and 404 themselves; everything else lands here."""
+    if status in (403, 429):
+        return True, f"rate limited (HTTP {status}); {note}"
+    if status >= 500:
+        return True, f"server error (HTTP {status}); {note}"
+    if status == 0:
+        return True, f"unreachable: {detail}; {note}"
+    return True, f"unexpected HTTP {status}; {note}"
+
+
+def check_repo_public(slug: str, token: str = "") -> tuple[bool, str]:
+    """Query the GitHub API for a repo's visibility. Returns (ok, message):
+    ok is False only when the repo is provably missing or private."""
+    status, body = _github_get(f"https://api.github.com/repos/{slug}", token)
+    if status == 200:
+        try:
+            private = json.loads(body).get("private")
+        except json.JSONDecodeError:
+            return True, "unparseable response; skipped"
+        return (False, "private") if private else (True, "")
+    if status == 404:
+        return False, "not found or private"
+    return _skip(status, body, "skipped")
+
+
+def check_manifest(slug: str, ref: str, token: str = "") -> tuple[bool, str]:
+    """Check the repo contains an openhost.toml manifest at its root (on ref, if
+    pinned). Same (ok, message) contract as check_repo_public."""
+    base = f"https://api.github.com/repos/{slug}/contents/openhost.toml"
+    url = base + ("?ref=" + urllib.parse.quote(ref) if ref else "")
+    status, body = _github_get(url, token)
+    if status == 200:
+        return True, ""
+    if status == 404:
+        # A pinned ref that 404s may be a deleted/renamed ref rather than a
+        # missing file; distinguish by re-checking the default branch.
+        if ref:
+            base_status, base_body = _github_get(base, token)
+            if base_status == 200:
+                return False, f"openhost.toml exists on default branch but not at repo_ref {ref!r}"
+            if base_status != 404:
+                return _skip(base_status, base_body, "manifest not checked")
+        return False, "missing openhost.toml"
+    return _skip(status, body, "manifest not checked")
+
+
+def verify_repos(feed: dict, names: list[str] | None = None) -> int:
+    """Check apps' repos are public and carry an openhost.toml; with names, only
+    those apps. A missing/private repo fails; a rate-limit/outage skip warns on a
+    full scan but fails a targeted check, which must validate its changed repos."""
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or ""
+    apps = feed["apps"]
+    if names:
+        wanted = set(names)
+        apps = [a for a in apps if a["name"] in wanted]
+        missing = sorted(wanted - {a["name"] for a in apps})
+        if missing:
+            print(
+                f"error: no catalog app named: {', '.join(missing)}",
+                file=sys.stderr,
+            )
+            return 1
+    failures: list[str] = []
+    skipped: list[str] = []
+    verified = 0
+    for app in apps:
+        slug = repo_slug(app["repo_url"])
+        ok, message = check_repo_public(slug, token)
+        if ok and not message:
+            ok, message = check_manifest(slug, app["repo_ref"], token)
+        line = f"  {app['name']}: {app['repo_url']} — {message}"
+        if not ok:
+            failures.append(line)
+        elif message:
+            skipped.append(line)
+            print(f"warning:{line}", file=sys.stderr)
+        else:
+            verified += 1
+
+    if failures:
+        print(
+            "error: the following apps do not reference a public repo with an "
+            "openhost.toml manifest:",
+            file=sys.stderr,
+        )
+        for line in failures:
+            print(line, file=sys.stderr)
+        return 1
+
+    if skipped and names:
+        print(
+            f"error: could not validate {len(skipped)} changed repo(s) (rate limit "
+            "or outage); re-run once GitHub is reachable",
+            file=sys.stderr,
+        )
+        return 1
+
+    summary = f"verified {verified} repo(s)"
+    if skipped:
+        summary += f", skipped {len(skipped)} (not validated)"
+    print(summary)
+    return 0
 
 
 def validate_score(app_toml_path: str, value) -> int:
@@ -143,9 +284,24 @@ def build_feed(root: str) -> dict:
                 file=sys.stderr,
             )
             sys.exit(1)
-        if not app.get("repo_url"):
+        if name != entry:
+            print(
+                f"error: {app_toml}: [app].name {name!r} must equal its "
+                f"directory {entry!r}",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+        repo_url = app.get("repo_url")
+        if not repo_url:
             print(
                 f"error: {app_toml}: missing required [app].repo_url field",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+        if not _REPO_URL_PATTERN.match(repo_url):
+            print(
+                f"error: {app_toml}: invalid [app].repo_url {repo_url!r}; "
+                "must be a GitHub repo URL like https://github.com/<org>/<repo>",
                 file=sys.stderr,
             )
             sys.exit(1)
@@ -189,9 +345,11 @@ def build_feed(root: str) -> dict:
         sys.exit(1)
 
     # Each app's `name` is the identifier the catalog uses for URLs, DB keys,
-    # and the default deployed app name. Within a single source, names must be
-    # unique; otherwise the catalog sync rejects the feed entirely.
+    # and the default deployed app name. Within a single source, both the name
+    # and the underlying repo (org/name slug) must be unique; otherwise the
+    # catalog sync rejects the feed entirely.
     seen_names: dict[str, int] = {}
+    seen_repos: dict[str, int] = {}
     for i, app in enumerate(apps):
         name = app["name"]
         if name in seen_names:
@@ -203,6 +361,17 @@ def build_feed(root: str) -> dict:
             )
             sys.exit(1)
         seen_names[name] = i
+
+        slug = repo_slug(app["repo_url"])
+        if slug in seen_repos:
+            first = apps[seen_repos[slug]]["title"]
+            print(
+                f"error: duplicate repo {slug!r} (first seen in {first!r}); "
+                "each app in a source must reference a unique repository",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+        seen_repos[slug] = i
 
     return {
         "schema": "openhost.catalog.v1",
@@ -224,13 +393,28 @@ def main() -> int:
         action="store_true",
         help="Exit non-zero if catalog.json does not match the source TOML files. Does not write.",
     )
+    parser.add_argument(
+        "--verify-repos",
+        action="store_true",
+        help="Check apps' repos are public and carry an openhost.toml (network). Does not write.",
+    )
+    parser.add_argument(
+        "apps",
+        nargs="*",
+        help="With --verify-repos, only check these app names (default: all).",
+    )
     args = parser.parse_args()
+    if args.apps and not args.verify_repos:
+        parser.error("app names are only accepted with --verify-repos")
 
     root = os.path.dirname(os.path.abspath(__file__))
     output_path = os.path.join(root, "catalog.json")
 
     feed = build_feed(root)
     fresh_stable = stable_copy(feed)
+
+    if args.verify_repos:
+        return verify_repos(feed, names=args.apps or None)
 
     if args.check:
         try:
