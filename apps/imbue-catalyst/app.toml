@@ -1,0 +1,14 @@
+[app]
+name = "imbue-catalyst"
+title = "Imbue Catalyst"
+description = "A tool for semi-autonomous scientific research and discovery."
+repo_url = "https://github.com/imbue-ai/catalyst"
+repo_ref = "stable"
+icon_url = "https://raw.githubusercontent.com/imbue-ai/catalyst/refs/heads/main/src/assets/favicon.png"
+website_url = "https://github.com/imbue-ai/catalyst"
+docs_url = "https://github.com/imbue-ai/catalyst#readme"
+tags = ["research", "ai", "science", "agent"]
+categories = ["ai", "productivity"]
+
+openhost_integration_score = 3
+openhost_integration_score_explanation = "Agents need to be authenticated through a separate page, and their authentications do not persist across restarts."
