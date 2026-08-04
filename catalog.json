@@ -763,6 +763,29 @@
       "openhost_integration_score_explanation": "The owner reaches the app through zone auth and can share group links with guests who need no OpenHost account, but Spliit has no user accounts so there is no real owner SSO to speak of."
     },
     {
+      "name": "stoat",
+      "title": "Stoat",
+      "description": "Open-source team and community chat, formerly Revolt, with real-time messaging, file uploads, and a bundled web client.",
+      "repo_url": "https://github.com/CarlKho-Minerva/openhost-stoat",
+      "repo_ref": "",
+      "icon_url": "https://avatars.githubusercontent.com/u/234249415?v=4",
+      "tags": [
+        "messaging",
+        "chat",
+        "community",
+        "revolt",
+        "self-hosted"
+      ],
+      "categories": [
+        "networking",
+        "privacy"
+      ],
+      "website_url": "https://stoat.chat",
+      "docs_url": "https://github.com/CarlKho-Minerva/openhost-stoat#readme",
+      "openhost_integration_score": 4,
+      "openhost_integration_score_explanation": "The owner is auto-logged in with zero clicks through OpenHost's trusted identity header; other users keep separate Stoat-local accounts."
+    },
+    {
       "name": "tangled",
       "title": "Tangled Knot",
       "description": "Self-hosted Tangled knot: the git data server for Tangled (tangled.org), the AT-Protocol-based social coding platform. Host your own repositories and federate with the Tangled network \u2014 your identity is your ATProto/Bluesky DID, the AppView provides the web UI and issues/PRs as ATProto records, and your knot holds the actual git data. Clone over HTTPS, push over SSH.",
@@ -893,5 +916,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-31T17:50:21Z"
+  "generated_at": "2026-08-04T08:13:31Z"
 }

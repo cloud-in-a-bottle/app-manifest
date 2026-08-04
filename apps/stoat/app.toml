@@ -1,0 +1,13 @@
+[app]
+name = "stoat"
+title = "Stoat"
+description = "Open-source team and community chat, formerly Revolt, with real-time messaging, file uploads, and a bundled web client."
+repo_url = "https://github.com/CarlKho-Minerva/openhost-stoat"
+website_url = "https://stoat.chat"
+docs_url = "https://github.com/CarlKho-Minerva/openhost-stoat#readme"
+icon_url = "https://avatars.githubusercontent.com/u/234249415?v=4"
+tags = ["messaging", "chat", "community", "revolt", "self-hosted"]
+categories = ["networking", "privacy"]
+
+openhost_integration_score = 4
+openhost_integration_score_explanation = "The owner is auto-logged in with zero clicks through OpenHost's trusted identity header; other users keep separate Stoat-local accounts."
