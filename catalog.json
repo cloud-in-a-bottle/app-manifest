@@ -272,6 +272,28 @@
       "openhost_integration_score_explanation": "Runs and persists pages correctly, but the editor does no OpenHost SSO of its own; owner access relies on the router gating the admin web port. The public capsule is anonymous over Tor."
     },
     {
+      "name": "imbue-catalyst",
+      "title": "Imbue Catalyst",
+      "description": "A tool for semi-autonomous scientific research and discovery.",
+      "repo_url": "https://github.com/imbue-ai/catalyst",
+      "repo_ref": "stable",
+      "icon_url": "https://raw.githubusercontent.com/imbue-ai/catalyst/refs/heads/main/src/assets/favicon.png",
+      "tags": [
+        "research",
+        "ai",
+        "science",
+        "agent"
+      ],
+      "categories": [
+        "ai",
+        "productivity"
+      ],
+      "website_url": "https://github.com/imbue-ai/catalyst",
+      "docs_url": "https://github.com/imbue-ai/catalyst#readme",
+      "openhost_integration_score": 3,
+      "openhost_integration_score_explanation": "Agents need to be authenticated through a separate page, and their authentications do not persist across restarts."
+    },
+    {
       "name": "jellyfin",
       "title": "Jellyfin",
       "description": "Free software media server for streaming your own movies, TV, music, and photos to any device.",
@@ -893,5 +915,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-31T17:50:21Z"
+  "generated_at": "2026-08-04T18:52:14Z"
 }
