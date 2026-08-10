@@ -610,6 +610,30 @@
       "openhost_integration_score_explanation": "Runs and persists shares correctly, but the app does no OpenHost SSO of its own; owner access relies on the router gating the admin UI, and recipients use anonymous Tor onion links."
     },
     {
+      "name": "openchamber",
+      "title": "OpenChamber",
+      "description": "Web workspace for running and supervising AI coding agents, with session goals, diff review, GitHub workflows, and a built-in terminal.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-openchamber",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "ai",
+        "code",
+        "agents",
+        "opencode",
+        "development"
+      ],
+      "categories": [
+        "ai",
+        "development",
+        "productivity"
+      ],
+      "website_url": "https://github.com/openchamber/openchamber",
+      "docs_url": "https://github.com/imbue-openhost/openhost-openchamber#readme",
+      "openhost_integration_score": 4,
+      "openhost_integration_score_explanation": "Zone owner reaches the workspace with zero clicks via router gating and the Anthropic key comes from the secrets service; access is perimeter-based rather than an in-app owner session, and there is deliberately no guest mode."
+    },
+    {
       "name": "openclaw",
       "title": "OpenClaw",
       "description": "Open-source personal AI assistant you run on your own devices, reachable from chat apps you already use (WhatsApp, Telegram, Slack, Discord, Signal, and more) and extendable with skills and tools.",
@@ -917,5 +941,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-08-06T19:02:40Z"
+  "generated_at": "2026-08-10T22:55:38Z"
 }
