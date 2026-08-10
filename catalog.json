@@ -66,6 +66,30 @@
       "openhost_integration_score_explanation": "Requires in-app login but provides services"
     },
     {
+      "name": "bluesky",
+      "title": "Bluesky",
+      "description": "Your own Bluesky account on your own server: an AT Protocol PDS plus the official web client on one domain, federating with the wider network.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-bluesky",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "bluesky",
+        "atproto",
+        "federation",
+        "social",
+        "pds"
+      ],
+      "categories": [
+        "networking",
+        "publishing",
+        "data-liberation"
+      ],
+      "website_url": "https://bsky.social",
+      "docs_url": "https://github.com/imbue-openhost/openhost-bluesky#readme",
+      "openhost_integration_score": 4,
+      "openhost_integration_score_explanation": "Owner lands signed in with zero clicks via a real server-minted PDS session while federation paths stay anonymously reachable, but the SSO app-password and PDS identity secrets are persisted as 0600 files rather than injected directly."
+    },
+    {
       "name": "calibre-web",
       "title": "Calibre-Web",
       "description": "Self-hosted web app for browsing, reading, and downloading your ebook library, with an OPDS feed, Kobo sync, and per-user access \u2014 a clean web front end for a Calibre library.",
@@ -941,5 +965,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-08-10T22:55:38Z"
+  "generated_at": "2026-08-10T23:31:46Z"
 }
