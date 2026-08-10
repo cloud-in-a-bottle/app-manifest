@@ -1,0 +1,12 @@
+[app]
+name = "openchamber"
+title = "OpenChamber"
+description = "Web workspace for running and supervising AI coding agents, with session goals, diff review, GitHub workflows, and a built-in terminal."
+repo_url = "https://github.com/imbue-openhost/openhost-openchamber"
+website_url = "https://github.com/openchamber/openchamber"
+docs_url = "https://github.com/imbue-openhost/openhost-openchamber#readme"
+tags = ["ai", "code", "agents", "opencode", "development"]
+categories = ["ai", "development", "productivity"]
+
+openhost_integration_score = 4
+openhost_integration_score_explanation = "Zone owner reaches the workspace with zero clicks via router gating and the Anthropic key comes from the secrets service; access is perimeter-based rather than an in-app owner session, and there is deliberately no guest mode."
