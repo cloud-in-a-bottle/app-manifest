@@ -2,9 +2,9 @@
 name = "webtop"
 title = "Webtop"
 description = "A full Linux desktop environment (XFCE, KDE, MATE, or i3) that runs in a container and is accessible from any modern web browser."
-repo_url = "https://github.com/imbue-openhost/openhost-webtop"
+repo_url = "https://github.com/imbue-openhost/bottled-webtop"
 website_url = "https://github.com/linuxserver/docker-webtop"
-docs_url = "https://github.com/imbue-openhost/openhost-webtop#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-webtop#readme"
 tags = ["desktop", "xfce", "linux", "browser"]
 categories = ["productivity", "development"]
 

@@ -2,9 +2,9 @@
 name = "miniflux"
 title = "Miniflux"
 description = "Minimalist, opinionated RSS/Atom feed reader focused on readability and privacy, with keyboard-driven navigation and automatic tracker removal."
-repo_url = "https://github.com/imbue-openhost/openhost-miniflux"
+repo_url = "https://github.com/imbue-openhost/bottled-miniflux"
 website_url = "https://miniflux.app"
-docs_url = "https://github.com/imbue-openhost/openhost-miniflux#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-miniflux#readme"
 tags = ["rss", "atom", "feed-reader", "news"]
 categories = ["productivity", "utility"]
 

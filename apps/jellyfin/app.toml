@@ -2,9 +2,9 @@
 name = "jellyfin"
 title = "Jellyfin"
 description = "Free software media server for streaming your own movies, TV, music, and photos to any device."
-repo_url = "https://github.com/imbue-openhost/openhost-jellyfin"
+repo_url = "https://github.com/imbue-openhost/bottled-jellyfin"
 website_url = "https://jellyfin.org"
-docs_url = "https://github.com/imbue-openhost/openhost-jellyfin#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-jellyfin#readme"
 tags = ["media", "streaming", "movies", "music", "self-hosted"]
 categories = ["entertainment", "privacy"]
 

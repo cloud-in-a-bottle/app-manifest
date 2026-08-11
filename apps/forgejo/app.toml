@@ -2,9 +2,9 @@
 name = "forgejo"
 title = "Forgejo"
 description = "Self-hosted, lightweight software forge with Git hosting, issues, pull requests, CI/CD, and a package registry — a Free Software alternative to GitHub."
-repo_url = "https://github.com/imbue-openhost/openhost-forgejo"
+repo_url = "https://github.com/imbue-openhost/bottled-forgejo"
 website_url = "https://forgejo.org"
-docs_url = "https://github.com/imbue-openhost/openhost-forgejo#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-forgejo#readme"
 tags = ["git", "code", "ci-cd", "forge"]
 categories = ["development"]
 

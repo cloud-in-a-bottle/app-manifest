@@ -2,9 +2,9 @@
 name = "uptime-kuma"
 title = "Uptime Kuma"
 description = "Self-hosted uptime monitoring with HTTP, TCP, DNS, and ping checks plus status pages."
-repo_url = "https://github.com/imbue-openhost/openhost-uptime-kuma"
+repo_url = "https://github.com/imbue-openhost/bottled-uptime-kuma"
 website_url = "https://uptime.kuma.pet"
-docs_url = "https://github.com/imbue-openhost/openhost-uptime-kuma#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-uptime-kuma#readme"
 tags = ["monitoring", "uptime", "status"]
 categories = ["utility", "networking"]
 

@@ -2,9 +2,9 @@
 name = "hidden-service"
 title = "Tor Hidden Service"
 description = "Tor hidden service with a simple page editor CMS."
-repo_url = "https://github.com/imbue-openhost/openhost-hidden-service"
-website_url = "https://github.com/imbue-openhost/openhost-hidden-service"
-docs_url = "https://github.com/imbue-openhost/openhost-hidden-service#readme"
+repo_url = "https://github.com/imbue-openhost/bottled-hidden-service"
+website_url = "https://github.com/imbue-openhost/bottled-hidden-service"
+docs_url = "https://github.com/imbue-openhost/bottled-hidden-service#readme"
 tags = ["tor", "privacy", "onion", "cms"]
 categories = ["privacy", "utility", "networking"]
 

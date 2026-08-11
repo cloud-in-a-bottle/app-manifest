@@ -2,9 +2,9 @@
 name = "navidrome"
 title = "Navidrome"
 description = "Modern music server and streamer compatible with Subsonic/Airsonic clients."
-repo_url = "https://github.com/imbue-openhost/openhost-navidrome"
+repo_url = "https://github.com/imbue-openhost/bottled-navidrome"
 website_url = "https://www.navidrome.org"
-docs_url = "https://github.com/imbue-openhost/openhost-navidrome#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-navidrome#readme"
 tags = ["music", "streaming", "media"]
 categories = ["entertainment", "privacy"]
 

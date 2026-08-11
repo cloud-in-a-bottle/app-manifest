@@ -2,9 +2,9 @@
 name = "nextcloud"
 title = "Nextcloud"
 description = "Self-hosted files, calendar, and contacts platform with sync clients, sharing, and a large app ecosystem."
-repo_url = "https://github.com/imbue-openhost/openhost-nextcloud"
+repo_url = "https://github.com/imbue-openhost/bottled-nextcloud"
 website_url = "https://nextcloud.com"
-docs_url = "https://github.com/imbue-openhost/openhost-nextcloud#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-nextcloud#readme"
 tags = ["files", "storage", "calendar", "contacts", "sync", "sharing"]
 categories = ["productivity", "privacy", "utility", "data-liberation"]
 

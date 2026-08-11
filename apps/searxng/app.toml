@@ -2,9 +2,9 @@
 name = "searxng"
 title = "SearXNG"
 description = "Privacy-respecting metasearch engine that aggregates results from 70+ search services."
-repo_url = "https://github.com/imbue-openhost/openhost-searxng"
+repo_url = "https://github.com/imbue-openhost/bottled-searxng"
 website_url = "https://docs.searxng.org"
-docs_url = "https://github.com/imbue-openhost/openhost-searxng#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-searxng#readme"
 tags = ["search", "privacy", "metasearch"]
 categories = ["search", "privacy", "utility"]
 

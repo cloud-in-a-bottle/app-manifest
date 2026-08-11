@@ -2,9 +2,9 @@
 name = "wg-easy"
 title = "wg-easy"
 description = "A WireGuard VPN server with a web UI for easily creating and managing client connections, including QR codes and downloadable device configs."
-repo_url = "https://github.com/imbue-openhost/openhost-wg-easy"
+repo_url = "https://github.com/imbue-openhost/bottled-wg-easy"
 website_url = "https://github.com/wg-easy/wg-easy"
-docs_url = "https://github.com/imbue-openhost/openhost-wg-easy#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-wg-easy#readme"
 tags = ["vpn", "wireguard", "networking", "privacy"]
 categories = ["networking", "privacy"]
 

@@ -2,9 +2,9 @@
 name = "lila"
 title = "Lichess"
 description = "Self-hosted Lichess (Lila) chess server with one-click SSO: play, do puzzles, run tournaments, and analyze games. Pre-seeded so the lobby and leaderboards aren't empty."
-repo_url = "https://github.com/imbue-openhost/openhost-lila"
+repo_url = "https://github.com/imbue-openhost/bottled-lila"
 website_url = "https://lichess.org"
-docs_url = "https://github.com/imbue-openhost/openhost-lila#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-lila#readme"
 tags = ["chess", "games", "lichess", "tournaments", "puzzles"]
 categories = ["entertainment"]
 
