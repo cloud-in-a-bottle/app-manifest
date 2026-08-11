@@ -2,9 +2,9 @@
 name = "redlib"
 title = "Redlib"
 description = "Private front-end for Reddit. Browse posts and comments without JavaScript, ads, tracking, or a Reddit account; all requests are proxied through the server."
-repo_url = "https://github.com/imbue-openhost/openhost-redlib"
+repo_url = "https://github.com/imbue-openhost/bottled-redlib"
 website_url = "https://github.com/redlib-org/redlib"
-docs_url = "https://github.com/imbue-openhost/openhost-redlib#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-redlib#readme"
 tags = ["reddit", "privacy", "frontend", "proxy"]
 categories = ["privacy", "entertainment"]
 

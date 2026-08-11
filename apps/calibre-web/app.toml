@@ -2,9 +2,9 @@
 name = "calibre-web"
 title = "Calibre-Web"
 description = "Self-hosted web app for browsing, reading, and downloading your ebook library, with an OPDS feed, Kobo sync, and per-user access — a clean web front end for a Calibre library."
-repo_url = "https://github.com/imbue-openhost/openhost-calibre-web"
+repo_url = "https://github.com/imbue-openhost/bottled-calibre-web"
 website_url = "https://github.com/janeczku/calibre-web"
-docs_url = "https://github.com/imbue-openhost/openhost-calibre-web#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-calibre-web#readme"
 tags = ["ebooks", "books", "reading", "library", "opds", "self-hosted"]
 categories = ["publishing", "entertainment"]
 

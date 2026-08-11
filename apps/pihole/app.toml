@@ -2,9 +2,9 @@
 name = "pihole"
 title = "Pi-hole"
 description = "Network-wide ad blocker that blocks ads and trackers at the DNS level for every device on your network, with a web dashboard for statistics, query logs, and allow/deny list management."
-repo_url = "https://github.com/imbue-openhost/openhost-pihole"
+repo_url = "https://github.com/imbue-openhost/bottled-pihole"
 website_url = "https://pi-hole.net"
-docs_url = "https://github.com/imbue-openhost/openhost-pihole#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-pihole#readme"
 tags = ["dns", "ad-blocker", "privacy", "network"]
 categories = ["networking", "privacy", "productivity"]
 

@@ -2,9 +2,9 @@
 name = "onionshare"
 title = "OnionShare"
 description = "Anonymously share files, host a website, or run a chat room over Tor hidden services."
-repo_url = "https://github.com/imbue-openhost/openhost-onionshare"
+repo_url = "https://github.com/imbue-openhost/bottled-onionshare"
 website_url = "https://onionshare.org"
-docs_url = "https://github.com/imbue-openhost/openhost-onionshare#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-onionshare#readme"
 tags = ["tor", "privacy", "onion", "file-sharing"]
 categories = ["privacy", "utility", "networking"]
 

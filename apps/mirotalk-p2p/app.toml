@@ -2,9 +2,9 @@
 name = "mirotalk-p2p"
 title = "MiroTalk P2P"
 description = "Open-source WebRTC video conferencing where browsers connect peer-to-peer for real-time audio and video; the server only handles signaling, never media. Includes screen sharing, chat, a collaborative whiteboard, and file sharing."
-repo_url = "https://github.com/imbue-openhost/openhost-mirotalk-p2p"
+repo_url = "https://github.com/imbue-openhost/bottled-mirotalk-p2p"
 website_url = "https://github.com/miroslavpejic85/mirotalk"
-docs_url = "https://github.com/imbue-openhost/openhost-mirotalk-p2p#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-mirotalk-p2p#readme"
 tags = ["video", "conferencing", "webrtc", "p2p", "meetings"]
 categories = ["networking", "privacy"]
 

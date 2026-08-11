@@ -2,9 +2,9 @@
 name = "spliit"
 title = "Spliit"
 description = "Minimalist, account-free app for splitting shared expenses with friends and family."
-repo_url = "https://github.com/imbue-openhost/openhost-spliit"
+repo_url = "https://github.com/imbue-openhost/bottled-spliit"
 website_url = "https://spliit.app"
-docs_url = "https://github.com/imbue-openhost/openhost-spliit#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-spliit#readme"
 tags = ["expenses", "money", "bill-splitting", "groups"]
 categories = ["productivity", "utility"]
 

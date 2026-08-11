@@ -69,7 +69,7 @@
       "name": "bluesky",
       "title": "Bluesky",
       "description": "Your own Bluesky account on your own server: an AT Protocol PDS plus the official web client on one domain, federating with the wider network.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-bluesky",
+      "repo_url": "https://github.com/imbue-openhost/bottled-bluesky",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -85,7 +85,7 @@
         "data-liberation"
       ],
       "website_url": "https://bsky.social",
-      "docs_url": "https://github.com/imbue-openhost/openhost-bluesky#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-bluesky#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Owner lands signed in with zero clicks via a real server-minted PDS session while federation paths stay anonymously reachable, but the SSO app-password and PDS identity secrets are persisted as 0600 files rather than injected directly."
     },
@@ -93,7 +93,7 @@
       "name": "calibre-web",
       "title": "Calibre-Web",
       "description": "Self-hosted web app for browsing, reading, and downloading your ebook library, with an OPDS feed, Kobo sync, and per-user access \u2014 a clean web front end for a Calibre library.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-calibre-web",
+      "repo_url": "https://github.com/imbue-openhost/bottled-calibre-web",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -109,7 +109,7 @@
         "entertainment"
       ],
       "website_url": "https://github.com/janeczku/calibre-web",
-      "docs_url": "https://github.com/imbue-openhost/openhost-calibre-web#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-calibre-web#readme",
       "openhost_integration_score": 3,
       "openhost_integration_score_explanation": "Zone owner is auto-logged in as admin via the owner header, but invited readers still sign in with Calibre-Web-local password accounts."
     },
@@ -165,7 +165,7 @@
       "name": "code-completion",
       "title": "Code Completion",
       "description": "Code completion server with model management UI and OpenAI-compatible API.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-code-completion",
+      "repo_url": "https://github.com/imbue-openhost/bottled-code-completion",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -180,8 +180,8 @@
         "development",
         "productivity"
       ],
-      "website_url": "https://github.com/imbue-openhost/openhost-code-completion",
-      "docs_url": "https://github.com/imbue-openhost/openhost-code-completion#readme",
+      "website_url": "https://github.com/imbue-openhost/bottled-code-completion",
+      "docs_url": "https://github.com/imbue-openhost/bottled-code-completion#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Zone owner reaches the management UI via router gating (no login form) and the OpenAI-compatible API is gated by an app-issued token; access is perimeter-based rather than a full owner session."
     },
@@ -233,7 +233,7 @@
       "name": "forgejo",
       "title": "Forgejo",
       "description": "Self-hosted, lightweight software forge with Git hosting, issues, pull requests, CI/CD, and a package registry \u2014 a Free Software alternative to GitHub.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-forgejo",
+      "repo_url": "https://github.com/imbue-openhost/bottled-forgejo",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -246,7 +246,7 @@
         "development"
       ],
       "website_url": "https://forgejo.org",
-      "docs_url": "https://github.com/imbue-openhost/openhost-forgejo#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-forgejo#readme",
       "openhost_integration_score": 3,
       "openhost_integration_score_explanation": "Zone owner is auto-logged in as admin; invited users still create Forgejo-local password accounts."
     },
@@ -254,7 +254,7 @@
       "name": "gemini",
       "title": "Gemini",
       "description": "Agate-based Gemini protocol server for hosting a capsule of static text documents, browsable with any Gemini client over TLS on the protocol's standard port 1965.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-gemini",
+      "repo_url": "https://github.com/imbue-openhost/bottled-gemini",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -268,7 +268,7 @@
         "publishing"
       ],
       "website_url": "https://geminiprotocol.net",
-      "docs_url": "https://github.com/imbue-openhost/openhost-gemini#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-gemini#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Owner is auto-logged into the gemtext editor and guests get the public landing page; the Gemini capsule itself is public by protocol on port 1965."
     },
@@ -276,7 +276,7 @@
       "name": "graphhopper",
       "title": "GraphHopper",
       "description": "Self-hosted routing engine built on OpenStreetMap data, with car, bike, and foot navigation profiles and a web map UI offering turn-by-turn directions.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-graphhopper",
+      "repo_url": "https://github.com/imbue-openhost/bottled-graphhopper",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -292,7 +292,7 @@
         "search"
       ],
       "website_url": "https://www.graphhopper.com",
-      "docs_url": "https://github.com/imbue-openhost/openhost-graphhopper#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-graphhopper#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Stateless routing engine behind OpenHost zone auth with a small owner-only region admin; no accounts and nothing to leak, but no full owner session."
     },
@@ -300,7 +300,7 @@
       "name": "hidden-service",
       "title": "Tor Hidden Service",
       "description": "Tor hidden service with a simple page editor CMS.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-hidden-service",
+      "repo_url": "https://github.com/imbue-openhost/bottled-hidden-service",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -314,8 +314,8 @@
         "utility",
         "networking"
       ],
-      "website_url": "https://github.com/imbue-openhost/openhost-hidden-service",
-      "docs_url": "https://github.com/imbue-openhost/openhost-hidden-service#readme",
+      "website_url": "https://github.com/imbue-openhost/bottled-hidden-service",
+      "docs_url": "https://github.com/imbue-openhost/bottled-hidden-service#readme",
       "openhost_integration_score": 2,
       "openhost_integration_score_explanation": "Runs and persists pages correctly, but the editor does no OpenHost SSO of its own; owner access relies on the router gating the admin web port. The public capsule is anonymous over Tor."
     },
@@ -345,7 +345,7 @@
       "name": "jellyfin",
       "title": "Jellyfin",
       "description": "Free software media server for streaming your own movies, TV, music, and photos to any device.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-jellyfin",
+      "repo_url": "https://github.com/imbue-openhost/bottled-jellyfin",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -360,7 +360,7 @@
         "privacy"
       ],
       "website_url": "https://jellyfin.org",
-      "docs_url": "https://github.com/imbue-openhost/openhost-jellyfin#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-jellyfin#readme",
       "openhost_integration_score": 3,
       "openhost_integration_score_explanation": "Owner is auto-signed into the web UI with zero clicks via a token shim, but invited users and third-party Jellyfin client apps still sign in with app-local accounts."
     },
@@ -368,7 +368,7 @@
       "name": "jitsi",
       "title": "Jitsi Meet",
       "description": "Scalable video conferencing with an SFU (Jitsi Videobridge) \u2014 anyone with the URL can join a meeting.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-jitsi",
+      "repo_url": "https://github.com/imbue-openhost/bottled-jitsi",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -383,7 +383,7 @@
         "privacy"
       ],
       "website_url": "https://jitsi.org",
-      "docs_url": "https://github.com/imbue-openhost/openhost-jitsi#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-jitsi#readme",
       "openhost_integration_score": 3,
       "openhost_integration_score_explanation": "Anyone with the meeting URL can join by design; no per-user OpenHost login, which fits the conferencing model."
     },
@@ -391,7 +391,7 @@
       "name": "lila",
       "title": "Lichess",
       "description": "Self-hosted Lichess (Lila) chess server with one-click SSO: play, do puzzles, run tournaments, and analyze games. Pre-seeded so the lobby and leaderboards aren't empty.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-lila",
+      "repo_url": "https://github.com/imbue-openhost/bottled-lila",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -405,7 +405,7 @@
         "entertainment"
       ],
       "website_url": "https://lichess.org",
-      "docs_url": "https://github.com/imbue-openhost/openhost-lila#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-lila#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Zone owner is auto-logged in as admin with zero clicks; shared challenge/game links work for anonymous guests without an OpenHost account, and AI/bot games play. Short of 5 because extra registered players still need Lila-local accounts."
     },
@@ -436,7 +436,7 @@
       "name": "lyftr",
       "title": "Lyftr",
       "description": "Self-hosted workout tracker: log lifts and sets, build programs, and track bodyweight and personal records over time.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-lyftr",
+      "repo_url": "https://github.com/imbue-openhost/bottled-lyftr",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -451,7 +451,7 @@
         "productivity"
       ],
       "website_url": "https://github.com/Cawlumm/lyftr",
-      "docs_url": "https://github.com/imbue-openhost/openhost-lyftr#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-lyftr#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Zone owner is auto-logged in with zero clicks; guests hit the app's login. Single-user tracker with no accounts to bootstrap and nothing left on disk."
     },
@@ -481,7 +481,7 @@
       "name": "mealie",
       "title": "Mealie",
       "description": "Self-hosted recipe manager and meal planner with a per-recipe cooking timeline for iterating on recipes across multiple attempts.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-mealie",
+      "repo_url": "https://github.com/imbue-openhost/bottled-mealie",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -495,7 +495,7 @@
         "utility"
       ],
       "website_url": "https://mealie.io",
-      "docs_url": "https://github.com/imbue-openhost/openhost-mealie#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-mealie#readme",
       "openhost_integration_score": 5,
       "openhost_integration_score_explanation": "Zone owner is auto-logged in with zero clicks via an OIDC bridge; guests are bounced to the zone login. Nothing to set up."
     },
@@ -522,7 +522,7 @@
       "name": "miniflux",
       "title": "Miniflux",
       "description": "Minimalist, opinionated RSS/Atom feed reader focused on readability and privacy, with keyboard-driven navigation and automatic tracker removal.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-miniflux",
+      "repo_url": "https://github.com/imbue-openhost/bottled-miniflux",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -536,7 +536,7 @@
         "utility"
       ],
       "website_url": "https://miniflux.app",
-      "docs_url": "https://github.com/imbue-openhost/openhost-miniflux#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-miniflux#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Zone owner is auto-logged in via OpenHost SSO; bundled Postgres persists feeds cleanly."
     },
@@ -544,7 +544,7 @@
       "name": "mirotalk-p2p",
       "title": "MiroTalk P2P",
       "description": "Open-source WebRTC video conferencing where browsers connect peer-to-peer for real-time audio and video; the server only handles signaling, never media. Includes screen sharing, chat, a collaborative whiteboard, and file sharing.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-mirotalk-p2p",
+      "repo_url": "https://github.com/imbue-openhost/bottled-mirotalk-p2p",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -559,7 +559,7 @@
         "privacy"
       ],
       "website_url": "https://github.com/miroslavpejic85/mirotalk",
-      "docs_url": "https://github.com/imbue-openhost/openhost-mirotalk-p2p#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-mirotalk-p2p#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Zone owner is auto-logged in as host; guests join via the room URL. Signaling-only, no media stored."
     },
@@ -567,7 +567,7 @@
       "name": "navidrome",
       "title": "Navidrome",
       "description": "Modern music server and streamer compatible with Subsonic/Airsonic clients.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-navidrome",
+      "repo_url": "https://github.com/imbue-openhost/bottled-navidrome",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -580,7 +580,7 @@
         "privacy"
       ],
       "website_url": "https://www.navidrome.org",
-      "docs_url": "https://github.com/imbue-openhost/openhost-navidrome#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-navidrome#readme",
       "openhost_integration_score": 3,
       "openhost_integration_score_explanation": "Owner is auto-logged in as admin, but invited users and Subsonic client apps still need app-local Navidrome accounts."
     },
@@ -588,7 +588,7 @@
       "name": "nextcloud",
       "title": "Nextcloud",
       "description": "Self-hosted files, calendar, and contacts platform with sync clients, sharing, and a large app ecosystem.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-nextcloud",
+      "repo_url": "https://github.com/imbue-openhost/bottled-nextcloud",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -606,7 +606,7 @@
         "data-liberation"
       ],
       "website_url": "https://nextcloud.com",
-      "docs_url": "https://github.com/imbue-openhost/openhost-nextcloud#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-nextcloud#readme",
       "openhost_integration_score": 5,
       "openhost_integration_score_explanation": "Zone owner is auto-logged into an admin account with zero clicks via the trusted owner header bridged to user_saml; sync clients (WebDAV) and public share links pass through without owner login, and non-owner visitors are never signed in as the owner."
     },
@@ -614,7 +614,7 @@
       "name": "onionshare",
       "title": "OnionShare",
       "description": "Anonymously share files, host a website, or run a chat room over Tor hidden services.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-onionshare",
+      "repo_url": "https://github.com/imbue-openhost/bottled-onionshare",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -629,7 +629,7 @@
         "networking"
       ],
       "website_url": "https://onionshare.org",
-      "docs_url": "https://github.com/imbue-openhost/openhost-onionshare#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-onionshare#readme",
       "openhost_integration_score": 2,
       "openhost_integration_score_explanation": "Runs and persists shares correctly, but the app does no OpenHost SSO of its own; owner access relies on the router gating the admin UI, and recipients use anonymous Tor onion links."
     },
@@ -637,7 +637,7 @@
       "name": "openchamber",
       "title": "OpenChamber",
       "description": "Web workspace for running and supervising AI coding agents, with session goals, diff review, GitHub workflows, and a built-in terminal.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-openchamber",
+      "repo_url": "https://github.com/imbue-openhost/bottled-openchamber",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -653,7 +653,7 @@
         "productivity"
       ],
       "website_url": "https://github.com/openchamber/openchamber",
-      "docs_url": "https://github.com/imbue-openhost/openhost-openchamber#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-openchamber#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Zone owner reaches the workspace with zero clicks via router gating and the Anthropic key comes from the secrets service; access is perimeter-based rather than an in-app owner session, and there is deliberately no guest mode."
     },
@@ -661,7 +661,7 @@
       "name": "openclaw",
       "title": "OpenClaw",
       "description": "Open-source personal AI assistant you run on your own devices, reachable from chat apps you already use (WhatsApp, Telegram, Slack, Discord, Signal, and more) and extendable with skills and tools.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-openclaw",
+      "repo_url": "https://github.com/imbue-openhost/bottled-openclaw",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -674,7 +674,7 @@
         "productivity"
       ],
       "website_url": "https://openclaw.ai/",
-      "docs_url": "https://github.com/imbue-openhost/openhost-openclaw#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-openclaw#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Zone owner is auto-logged in with full operator access via the OpenHost owner header; a single-user assistant, so non-owners are simply rejected and no secrets are written to disk."
     },
@@ -682,7 +682,7 @@
       "name": "openweb-ui",
       "title": "Open WebUI",
       "description": "Self-hosted ChatGPT-style interface for local and remote LLMs (Ollama, OpenAI, Anthropic, etc).",
-      "repo_url": "https://github.com/imbue-openhost/openhost-openweb-ui",
+      "repo_url": "https://github.com/imbue-openhost/bottled-openweb-ui",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -696,7 +696,7 @@
         "productivity"
       ],
       "website_url": "https://openwebui.com",
-      "docs_url": "https://github.com/imbue-openhost/openhost-openweb-ui#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-openweb-ui#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Zone owner lands as admin (Open WebUI's own auth disabled, router-gated) and guests are bounced to the zone login; owner access is perimeter-based rather than a native SSO session."
     },
@@ -725,7 +725,7 @@
       "name": "overleaf",
       "title": "Overleaf",
       "description": "Overleaf Community Edition: a self-hosted, collaborative online LaTeX editor with real-time editing and in-browser PDF compilation, with a bundled database.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-overleaf",
+      "repo_url": "https://github.com/imbue-openhost/bottled-overleaf",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -741,7 +741,7 @@
         "publishing"
       ],
       "website_url": "https://www.overleaf.com",
-      "docs_url": "https://github.com/imbue-openhost/openhost-overleaf#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-overleaf#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Zone owner is auto-signed into the Overleaf admin with zero clicks via the owner header, and project links can be shared publicly with collaborators who have no OpenHost account, but any named Overleaf accounts you add use app-local passwords created via the admin panel."
     },
@@ -749,7 +749,7 @@
       "name": "pihole",
       "title": "Pi-hole",
       "description": "Network-wide ad blocker that blocks ads and trackers at the DNS level for every device on your network, with a web dashboard for statistics, query logs, and allow/deny list management.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-pihole",
+      "repo_url": "https://github.com/imbue-openhost/bottled-pihole",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -764,7 +764,7 @@
         "productivity"
       ],
       "website_url": "https://pi-hole.net",
-      "docs_url": "https://github.com/imbue-openhost/openhost-pihole#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-pihole#readme",
       "openhost_integration_score": 3,
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the admin dashboard, but the generated admin password is stored in plaintext on disk where other apps could read it."
     },
@@ -772,7 +772,7 @@
       "name": "redlib",
       "title": "Redlib",
       "description": "Private front-end for Reddit. Browse posts and comments without JavaScript, ads, tracking, or a Reddit account; all requests are proxied through the server.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-redlib",
+      "repo_url": "https://github.com/imbue-openhost/bottled-redlib",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -786,7 +786,7 @@
         "entertainment"
       ],
       "website_url": "https://github.com/redlib-org/redlib",
-      "docs_url": "https://github.com/imbue-openhost/openhost-redlib#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-redlib#readme",
       "openhost_integration_score": 5,
       "openhost_integration_score_explanation": "Stateless public Reddit front-end with no accounts and nothing to leak; there is nothing to integrate, and it works cleanly for everyone out of the box."
     },
@@ -816,7 +816,7 @@
       "name": "searxng",
       "title": "SearXNG",
       "description": "Privacy-respecting metasearch engine that aggregates results from 70+ search services.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-searxng",
+      "repo_url": "https://github.com/imbue-openhost/bottled-searxng",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -830,7 +830,7 @@
         "utility"
       ],
       "website_url": "https://docs.searxng.org",
-      "docs_url": "https://github.com/imbue-openhost/openhost-searxng#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-searxng#readme",
       "openhost_integration_score": 5,
       "openhost_integration_score_explanation": "Stateless public metasearch with no accounts and nothing to leak; there is nothing to integrate, and it works cleanly for everyone out of the box."
     },
@@ -838,7 +838,7 @@
       "name": "spliit",
       "title": "Spliit",
       "description": "Minimalist, account-free app for splitting shared expenses with friends and family.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-spliit",
+      "repo_url": "https://github.com/imbue-openhost/bottled-spliit",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -852,7 +852,7 @@
         "utility"
       ],
       "website_url": "https://spliit.app",
-      "docs_url": "https://github.com/imbue-openhost/openhost-spliit#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-spliit#readme",
       "openhost_integration_score": 3,
       "openhost_integration_score_explanation": "The owner reaches the app through zone auth and can share group links with guests who need no OpenHost account, but Spliit has no user accounts so there is no real owner SSO to speak of."
     },
@@ -860,7 +860,7 @@
       "name": "tangled",
       "title": "Tangled Knot",
       "description": "Self-hosted Tangled knot: the git data server for Tangled (tangled.org), the AT-Protocol-based social coding platform. Host your own repositories and federate with the Tangled network \u2014 your identity is your ATProto/Bluesky DID, the AppView provides the web UI and issues/PRs as ATProto records, and your knot holds the actual git data. Clone over HTTPS, push over SSH.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-tangled",
+      "repo_url": "https://github.com/imbue-openhost/bottled-tangled",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -874,7 +874,7 @@
         "development"
       ],
       "website_url": "https://tangled.org",
-      "docs_url": "https://github.com/imbue-openhost/openhost-tangled#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-tangled#readme",
       "openhost_integration_score": 2,
       "openhost_integration_score_explanation": "Deploys and persists git data cleanly, with an owner-gated in-app form to set your ATProto DID (no OpenHost SSO \u2014 the knot has no browser login). Setup needs external steps: a Bluesky/ATProto account and a verify click on tangled.org to federate."
     },
@@ -882,7 +882,7 @@
       "name": "uptime-kuma",
       "title": "Uptime Kuma",
       "description": "Self-hosted uptime monitoring with HTTP, TCP, DNS, and ping checks plus status pages.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-uptime-kuma",
+      "repo_url": "https://github.com/imbue-openhost/bottled-uptime-kuma",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -895,7 +895,7 @@
         "networking"
       ],
       "website_url": "https://uptime.kuma.pet",
-      "docs_url": "https://github.com/imbue-openhost/openhost-uptime-kuma#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-uptime-kuma#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Owner is auto-logged into the dashboard with zero clicks and guests are bounced to the zone login, but public status pages aren't exposed for anonymous viewing."
     },
@@ -903,7 +903,7 @@
       "name": "vaultwarden",
       "title": "VaultWarden",
       "description": "An alternative, open-source password manager server written in Rust that implements the Bitwarden API and works with the official Bitwarden client apps.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-vaultwarden",
+      "repo_url": "https://github.com/imbue-openhost/bottled-vaultwarden",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -916,7 +916,7 @@
         "utility"
       ],
       "website_url": "https://github.com/dani-garcia/vaultwarden",
-      "docs_url": "https://github.com/imbue-openhost/openhost-vaultwarden#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-vaultwarden#readme",
       "openhost_integration_score": 2,
       "openhost_integration_score_explanation": "Runs and persists data correctly, but there is no OpenHost SSO; the owner signs in through Vaultwarden's own email and master-password login form."
     },
@@ -924,7 +924,7 @@
       "name": "webtop",
       "title": "Webtop",
       "description": "A full Linux desktop environment (XFCE, KDE, MATE, or i3) that runs in a container and is accessible from any modern web browser.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-webtop",
+      "repo_url": "https://github.com/imbue-openhost/bottled-webtop",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -938,7 +938,7 @@
         "development"
       ],
       "website_url": "https://github.com/linuxserver/docker-webtop",
-      "docs_url": "https://github.com/imbue-openhost/openhost-webtop#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-webtop#readme",
       "openhost_integration_score": 2,
       "openhost_integration_score_explanation": "Desktop session persists under the home dir, but you reach it through the app's own gate rather than OpenHost auto-login."
     },
@@ -946,7 +946,7 @@
       "name": "wg-easy",
       "title": "wg-easy",
       "description": "A WireGuard VPN server with a web UI for easily creating and managing client connections, including QR codes and downloadable device configs.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-wg-easy",
+      "repo_url": "https://github.com/imbue-openhost/bottled-wg-easy",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -960,10 +960,10 @@
         "privacy"
       ],
       "website_url": "https://github.com/wg-easy/wg-easy",
-      "docs_url": "https://github.com/imbue-openhost/openhost-wg-easy#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-wg-easy#readme",
       "openhost_integration_score": 3,
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-08-10T23:31:46Z"
+  "generated_at": "2026-08-11T21:35:28Z"
 }

@@ -2,9 +2,9 @@
 name = "mealie"
 title = "Mealie"
 description = "Self-hosted recipe manager and meal planner with a per-recipe cooking timeline for iterating on recipes across multiple attempts."
-repo_url = "https://github.com/imbue-openhost/openhost-mealie"
+repo_url = "https://github.com/imbue-openhost/bottled-mealie"
 website_url = "https://mealie.io"
-docs_url = "https://github.com/imbue-openhost/openhost-mealie#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-mealie#readme"
 tags = ["recipes", "cooking", "meal-planning", "food"]
 categories = ["productivity", "utility"]
 

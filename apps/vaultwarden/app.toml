@@ -2,9 +2,9 @@
 name = "vaultwarden"
 title = "VaultWarden"
 description = "An alternative, open-source password manager server written in Rust that implements the Bitwarden API and works with the official Bitwarden client apps."
-repo_url = "https://github.com/imbue-openhost/openhost-vaultwarden"
+repo_url = "https://github.com/imbue-openhost/bottled-vaultwarden"
 website_url = "https://github.com/dani-garcia/vaultwarden"
-docs_url = "https://github.com/imbue-openhost/openhost-vaultwarden#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-vaultwarden#readme"
 tags = ["passwords", "privacy", "bitwarden"]
 categories = ["privacy", "utility"]
 

@@ -2,9 +2,9 @@
 name = "openchamber"
 title = "OpenChamber"
 description = "Web workspace for running and supervising AI coding agents, with session goals, diff review, GitHub workflows, and a built-in terminal."
-repo_url = "https://github.com/imbue-openhost/openhost-openchamber"
+repo_url = "https://github.com/imbue-openhost/bottled-openchamber"
 website_url = "https://github.com/openchamber/openchamber"
-docs_url = "https://github.com/imbue-openhost/openhost-openchamber#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-openchamber#readme"
 tags = ["ai", "code", "agents", "opencode", "development"]
 categories = ["ai", "development", "productivity"]
 

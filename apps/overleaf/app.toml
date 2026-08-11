@@ -2,9 +2,9 @@
 name = "overleaf"
 title = "Overleaf"
 description = "Overleaf Community Edition: a self-hosted, collaborative online LaTeX editor with real-time editing and in-browser PDF compilation, with a bundled database."
-repo_url = "https://github.com/imbue-openhost/openhost-overleaf"
+repo_url = "https://github.com/imbue-openhost/bottled-overleaf"
 website_url = "https://www.overleaf.com"
-docs_url = "https://github.com/imbue-openhost/openhost-overleaf#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-overleaf#readme"
 tags = ["latex", "editor", "writing", "collaboration", "academic", "self-hosted"]
 categories = ["productivity", "publishing"]
 

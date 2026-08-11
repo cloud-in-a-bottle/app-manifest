@@ -2,9 +2,9 @@
 name = "openweb-ui"
 title = "Open WebUI"
 description = "Self-hosted ChatGPT-style interface for local and remote LLMs (Ollama, OpenAI, Anthropic, etc)."
-repo_url = "https://github.com/imbue-openhost/openhost-openweb-ui"
+repo_url = "https://github.com/imbue-openhost/bottled-openweb-ui"
 website_url = "https://openwebui.com"
-docs_url = "https://github.com/imbue-openhost/openhost-openweb-ui#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-openweb-ui#readme"
 tags = ["llm", "ai", "chat", "ollama"]
 categories = ["ai", "productivity"]
 
