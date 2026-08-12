@@ -9,4 +9,4 @@ tags = ["ai", "api", "openai"]
 categories = ["ai", "utility"]
 
 openhost_integration_score = 4
-openhost_integration_score_explanation = "Requires in-app login but provides services"
+openhost_integration_score_explanation = "Owner reaches the web UI via OpenHost perimeter gating (no login form); its OpenAI-compatible inference API is exposed to other apps behind a full_access grant — perimeter-based, not a full owner session."
