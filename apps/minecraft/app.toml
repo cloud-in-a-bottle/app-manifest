@@ -2,9 +2,9 @@
 name = "minecraft"
 title = "Minecraft"
 description = "A self-hosted minecraft server runner"
-repo_url = "https://github.com/imbue-openhost/openhost-minecraft-server"
-website_url = "https://github.com/imbue-openhost/openhost-minecraft-server"
-docs_url = "https://github.com/imbue-openhost/openhost-minecraft-server#readme"
+repo_url = "https://github.com/imbue-openhost/bottled-minecraft"
+website_url = "https://github.com/imbue-openhost/bottled-minecraft"
+docs_url = "https://github.com/imbue-openhost/bottled-minecraft#readme"
 tags = ["minecraft", "games"]
 categories = ["entertainment"]
 

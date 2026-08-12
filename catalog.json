@@ -7,7 +7,7 @@
       "name": "apple-health-connector",
       "title": "Apple Health Connector",
       "description": "Ports over, collects, and analyzes data from Apple Health",
-      "repo_url": "https://github.com/imbue-openhost/openhost-apple-health",
+      "repo_url": "https://github.com/imbue-openhost/bottled-apple-health-connector",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -20,8 +20,8 @@
         "utility",
         "data-liberation"
       ],
-      "website_url": "https://github.com/imbue-openhost/openhost-apple-health",
-      "docs_url": "https://github.com/imbue-openhost/openhost-apple-health#readme",
+      "website_url": "https://github.com/imbue-openhost/bottled-apple-health-connector",
+      "docs_url": "https://github.com/imbue-openhost/bottled-apple-health-connector#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Zone owner is auto-logged into the dashboard with zero clicks; the machine ingest endpoint is public and gated by a self-issued API key, as expected for device uploads."
     },
@@ -48,7 +48,7 @@
       "name": "bifrost",
       "title": "Bifrost",
       "description": "Runs the Bifrost LLM gateway and exposes an OpenAI-compatible API as a cross-app service",
-      "repo_url": "https://github.com/imbue-openhost/openhost-bifrost-llm-gateway",
+      "repo_url": "https://github.com/imbue-openhost/bottled-bifrost",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -61,7 +61,7 @@
         "utility"
       ],
       "website_url": "https://github.com/maximhq/bifrost",
-      "docs_url": "https://github.com/imbue-openhost/openhost-bifrost-llm-gateway#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-bifrost#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Owner reaches the web UI via OpenHost perimeter gating (no login form); its OpenAI-compatible inference API is exposed to other apps behind a full_access grant \u2014 perimeter-based, not a full owner session."
     },
@@ -413,7 +413,7 @@
       "name": "limesurvey",
       "title": "LimeSurvey",
       "description": "Self-hosted survey and questionnaire platform with a bundled database, for building and running online surveys.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-LimeSurvey",
+      "repo_url": "https://github.com/imbue-openhost/bottled-limesurvey",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -428,7 +428,7 @@
         "utility"
       ],
       "website_url": "https://www.limesurvey.org",
-      "docs_url": "https://github.com/imbue-openhost/openhost-LimeSurvey#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-limesurvey#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Owner is auto-signed into the admin panel via the zone-owner header and anonymous respondents reach public surveys without a login, but any extra admin users you add use app-local passwords."
     },
@@ -503,7 +503,7 @@
       "name": "minecraft",
       "title": "Minecraft",
       "description": "A self-hosted minecraft server runner",
-      "repo_url": "https://github.com/imbue-openhost/openhost-minecraft-server",
+      "repo_url": "https://github.com/imbue-openhost/bottled-minecraft",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -513,8 +513,8 @@
       "categories": [
         "entertainment"
       ],
-      "website_url": "https://github.com/imbue-openhost/openhost-minecraft-server",
-      "docs_url": "https://github.com/imbue-openhost/openhost-minecraft-server#readme",
+      "website_url": "https://github.com/imbue-openhost/bottled-minecraft",
+      "docs_url": "https://github.com/imbue-openhost/bottled-minecraft#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Server provisions and persists worlds natively; players authenticate via Minecraft accounts, as expected for a game server."
     },
@@ -704,7 +704,7 @@
       "name": "oura-connector",
       "title": "Oura Connector",
       "description": "Imports, stores, and displays personal health data from Oura smart rings \u2014 including sleep, activity, and readiness metrics \u2014 and exposes the collected data through an API for other apps.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-oura-ring",
+      "repo_url": "https://github.com/imbue-openhost/bottled-oura-connector",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -716,8 +716,8 @@
         "utility",
         "data-liberation"
       ],
-      "website_url": "https://github.com/imbue-openhost/openhost-oura-ring",
-      "docs_url": "https://github.com/imbue-openhost/openhost-oura-ring#readme",
+      "website_url": "https://github.com/imbue-openhost/bottled-oura-connector",
+      "docs_url": "https://github.com/imbue-openhost/bottled-oura-connector#readme",
       "openhost_integration_score": 2,
       "openhost_integration_score_explanation": "Runs and persists data correctly, but there is no OpenHost SSO; access relies on the router gating the app, and the OAuth setup page is not owner-checked in-app."
     },
@@ -965,5 +965,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-08-12T01:04:47Z"
+  "generated_at": "2026-08-12T13:36:24Z"
 }

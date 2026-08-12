@@ -2,9 +2,9 @@
 name = "apple-health-connector"
 title = "Apple Health Connector"
 description = "Ports over, collects, and analyzes data from Apple Health"
-repo_url = "https://github.com/imbue-openhost/openhost-apple-health"
-website_url = "https://github.com/imbue-openhost/openhost-apple-health"
-docs_url = "https://github.com/imbue-openhost/openhost-apple-health#readme"
+repo_url = "https://github.com/imbue-openhost/bottled-apple-health-connector"
+website_url = "https://github.com/imbue-openhost/bottled-apple-health-connector"
+docs_url = "https://github.com/imbue-openhost/bottled-apple-health-connector#readme"
 tags = ["apple", "apple-health", "fitness", "data"]
 categories = ["utility", "data-liberation"]
 
