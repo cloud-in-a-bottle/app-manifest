@@ -9,4 +9,4 @@ tags = ["oura", "fitness", "data"]
 categories = ["utility", "data-liberation"]
 
 openhost_integration_score = 2
-openhost_integration_score_explanation = "Runs and persists data correctly, but there is no OpenHost SSO; access relies on the router gating the app, and the OAuth setup page is not owner-checked in-app."
+openhost_integration_score_explanation = "Runs and persists data correctly, but there is no Cloud in a Bottle SSO; access relies on the router gating the app, and the OAuth setup page is not owner-checked in-app."

@@ -1,7 +1,7 @@
 [app]
 name = "community-chat"
 title = "Community Chat"
-description = "Matrix Synapse homeserver with a bundled Cinny web client. End-to-end encrypted messaging, owner single sign-on, and a one-click join of the OpenHost community space."
+description = "Matrix Synapse homeserver with a bundled Cinny web client. End-to-end encrypted messaging, owner single sign-on, and a one-click join of the Cloud in a Bottle community space."
 repo_url = "https://github.com/imbue-openhost/openhost-community-chat"
 website_url = "https://matrix.org"
 docs_url = "https://github.com/imbue-openhost/openhost-community-chat#readme"
@@ -9,4 +9,4 @@ tags = ["messaging", "matrix", "encryption", "federation", "chat"]
 categories = ["networking", "privacy"]
 
 openhost_integration_score = 4
-openhost_integration_score_explanation = "The owner is auto-logged-in via SSO into the bundled web client (no login form), data persists, and the app self-restarts to apply settings. Short of 5 because it is single-owner: others who join get Synapse-local accounts, not OpenHost SSO."
+openhost_integration_score_explanation = "The owner is auto-logged-in via SSO into the bundled web client (no login form), data persists, and the app self-restarts to apply settings. Short of 5 because it is single-owner: others who join get Synapse-local accounts, not Cloud in a Bottle SSO."

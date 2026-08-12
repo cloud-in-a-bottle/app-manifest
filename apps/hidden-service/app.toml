@@ -9,4 +9,4 @@ tags = ["tor", "privacy", "onion", "cms"]
 categories = ["privacy", "utility", "networking"]
 
 openhost_integration_score = 2
-openhost_integration_score_explanation = "Runs and persists pages correctly, but the editor does no OpenHost SSO of its own; owner access relies on the router gating the admin web port. The public capsule is anonymous over Tor."
+openhost_integration_score_explanation = "Runs and persists pages correctly, but the editor does no Cloud in a Bottle SSO of its own; owner access relies on the router gating the admin web port. The public capsule is anonymous over Tor."

@@ -9,4 +9,4 @@ tags = ["ai", "assistant"]
 categories = ["ai", "development", "productivity"]
 
 openhost_integration_score = 4
-openhost_integration_score_explanation = "Zone owner is auto-logged in with full operator access via the OpenHost owner header; a single-user assistant, so non-owners are simply rejected and no secrets are written to disk."
+openhost_integration_score_explanation = "Zone owner is auto-logged in with full operator access via the Cloud in a Bottle owner header; a single-user assistant, so non-owners are simply rejected and no secrets are written to disk."

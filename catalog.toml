@@ -1,6 +1,6 @@
 [catalog]
 source_id = "official"
-name = "OpenHost Official"
-description = "Official OpenHost App Store — curated self-hosted applications"
-maintainer = "OpenHost Team"
+name = "Cloud in a Bottle Official"
+description = "Official Cloud in a Bottle App Store — curated self-hosted applications"
+maintainer = "Cloud in a Bottle Team"
 url = "https://github.com/imbue-openhost/openhost-apps"

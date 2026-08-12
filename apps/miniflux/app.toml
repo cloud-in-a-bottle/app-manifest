@@ -9,4 +9,4 @@ tags = ["rss", "atom", "feed-reader", "news"]
 categories = ["productivity", "utility"]
 
 openhost_integration_score = 4
-openhost_integration_score_explanation = "Zone owner is auto-logged in via OpenHost SSO; bundled Postgres persists feeds cleanly."
+openhost_integration_score_explanation = "Zone owner is auto-logged in via Cloud in a Bottle SSO; bundled Postgres persists feeds cleanly."

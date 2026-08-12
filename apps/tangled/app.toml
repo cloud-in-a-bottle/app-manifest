@@ -9,4 +9,4 @@ tags = ["git", "atproto", "federation", "forge", "bluesky"]
 categories = ["development"]
 
 openhost_integration_score = 2
-openhost_integration_score_explanation = "Deploys and persists git data cleanly, with an owner-gated in-app form to set your ATProto DID (no OpenHost SSO — the knot has no browser login). Setup needs external steps: a Bluesky/ATProto account and a verify click on tangled.org to federate."
+openhost_integration_score_explanation = "Deploys and persists git data cleanly, with an owner-gated in-app form to set your ATProto DID (no Cloud in a Bottle SSO — the knot has no browser login). Setup needs external steps: a Bluesky/ATProto account and a verify click on tangled.org to federate."

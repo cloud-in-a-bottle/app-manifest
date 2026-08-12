@@ -9,4 +9,4 @@ tags = ["screen-recording", "video", "loom-alternative", "sharing", "self-hosted
 categories = ["utility", "entertainment", "privacy"]
 
 openhost_integration_score = 2
-openhost_integration_score_explanation = "The owner reaches Cap through zone auth and share links play for accountless guests, but Cap keeps its own email-code login on top, so the owner signs in manually rather than via OpenHost SSO."
+openhost_integration_score_explanation = "The owner reaches Cap through zone auth and share links play for accountless guests, but Cap keeps its own email-code login on top, so the owner signs in manually rather than via Cloud in a Bottle SSO."
