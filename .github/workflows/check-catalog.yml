@@ -13,14 +13,24 @@ name: Catalog
 # invalid input (bad name, unknown category, malformed score).
 #
 # On a PR, only the repos whose app.toml changed are checked for being public,
-# so verification scales with the size of the diff, not the catalog. A full
-# scan of every repo is available on demand via the workflow_dispatch "scan"
-# job (authenticated by GITHUB_TOKEN to clear the unauthenticated rate limit).
+# so verification scales with the size of the diff, not the catalog. That means
+# an entry can rot after it is merged -- a repo going private, being deleted, or
+# losing its manifest is invisible until someone happens to touch that app.toml.
+# The "scan" job closes that gap by verifying every repo in the catalog. It runs
+# on a daily schedule and on demand via workflow_dispatch (authenticated by
+# GITHUB_TOKEN to clear the unauthenticated rate limit).
+#
+# The full scan deliberately does not gate merges: a repo going private is not
+# caused by the PR in front of it, so failing unrelated PRs would block catalog
+# work for a problem the author cannot fix.
 
 on:
   pull_request:
   push:
     branches: [main]
+  schedule:
+    # Daily drift check that every catalog repo is still public with a manifest.
+    - cron: "17 8 * * *"
   workflow_dispatch:
     inputs:
       apps:
@@ -109,7 +119,7 @@ jobs:
           git push
 
   scan:
-    if: github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
