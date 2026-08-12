@@ -2,9 +2,9 @@
 name = "bifrost"
 title = "Bifrost"
 description = "Runs the Bifrost LLM gateway and exposes an OpenAI-compatible API as a cross-app service"
-repo_url = "https://github.com/imbue-openhost/openhost-bifrost-llm-gateway"
+repo_url = "https://github.com/imbue-openhost/bottled-bifrost"
 website_url = "https://github.com/maximhq/bifrost"
-docs_url = "https://github.com/imbue-openhost/openhost-bifrost-llm-gateway#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-bifrost#readme"
 tags = ["ai", "api", "openai"]
 categories = ["ai", "utility"]
 

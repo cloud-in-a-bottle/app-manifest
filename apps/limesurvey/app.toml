@@ -2,9 +2,9 @@
 name = "limesurvey"
 title = "LimeSurvey"
 description = "Self-hosted survey and questionnaire platform with a bundled database, for building and running online surveys."
-repo_url = "https://github.com/imbue-openhost/openhost-LimeSurvey"
+repo_url = "https://github.com/imbue-openhost/bottled-limesurvey"
 website_url = "https://www.limesurvey.org"
-docs_url = "https://github.com/imbue-openhost/openhost-LimeSurvey#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-limesurvey#readme"
 tags = ["surveys", "forms", "questionnaires", "polls", "self-hosted"]
 categories = ["productivity", "utility"]
 
