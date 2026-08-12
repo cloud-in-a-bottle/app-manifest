@@ -1,7 +1,7 @@
 {
   "schema": "openhost.catalog.v1",
   "source_id": "official",
-  "source_name": "OpenHost Official",
+  "source_name": "Cloud in a Bottle Official",
   "apps": [
     {
       "name": "apple-health-connector",
@@ -28,7 +28,7 @@
     {
       "name": "backup",
       "title": "Backup",
-      "description": "Back up all OpenHost data to any Restic provider",
+      "description": "Back up all Cloud in a Bottle data to any Restic provider",
       "repo_url": "https://github.com/imbue-openhost/openhost-backup",
       "repo_ref": "",
       "icon_url": "",
@@ -63,7 +63,7 @@
       "website_url": "https://github.com/maximhq/bifrost",
       "docs_url": "https://github.com/imbue-openhost/bottled-bifrost#readme",
       "openhost_integration_score": 4,
-      "openhost_integration_score_explanation": "Owner reaches the web UI via OpenHost perimeter gating (no login form); its OpenAI-compatible inference API is exposed to other apps behind a full_access grant \u2014 perimeter-based, not a full owner session."
+      "openhost_integration_score_explanation": "Owner reaches the web UI via Cloud in a Bottle perimeter gating (no login form); its OpenAI-compatible inference API is exposed to other apps behind a full_access grant \u2014 perimeter-based, not a full owner session."
     },
     {
       "name": "bluesky",
@@ -135,7 +135,7 @@
       "website_url": "https://cap.so",
       "docs_url": "https://github.com/CarlKho-Minerva/openhost-cap#readme",
       "openhost_integration_score": 2,
-      "openhost_integration_score_explanation": "The owner reaches Cap through zone auth and share links play for accountless guests, but Cap keeps its own email-code login on top, so the owner signs in manually rather than via OpenHost SSO."
+      "openhost_integration_score_explanation": "The owner reaches Cap through zone auth and share links play for accountless guests, but Cap keeps its own email-code login on top, so the owner signs in manually rather than via Cloud in a Bottle SSO."
     },
     {
       "name": "claude-workbench",
@@ -188,7 +188,7 @@
     {
       "name": "community-chat",
       "title": "Community Chat",
-      "description": "Matrix Synapse homeserver with a bundled Cinny web client. End-to-end encrypted messaging, owner single sign-on, and a one-click join of the OpenHost community space.",
+      "description": "Matrix Synapse homeserver with a bundled Cinny web client. End-to-end encrypted messaging, owner single sign-on, and a one-click join of the Cloud in a Bottle community space.",
       "repo_url": "https://github.com/imbue-openhost/openhost-community-chat",
       "repo_ref": "",
       "icon_url": "",
@@ -206,7 +206,7 @@
       "website_url": "https://matrix.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-community-chat#readme",
       "openhost_integration_score": 4,
-      "openhost_integration_score_explanation": "The owner is auto-logged-in via SSO into the bundled web client (no login form), data persists, and the app self-restarts to apply settings. Short of 5 because it is single-owner: others who join get Synapse-local accounts, not OpenHost SSO."
+      "openhost_integration_score_explanation": "The owner is auto-logged-in via SSO into the bundled web client (no login form), data persists, and the app self-restarts to apply settings. Short of 5 because it is single-owner: others who join get Synapse-local accounts, not Cloud in a Bottle SSO."
     },
     {
       "name": "filestash",
@@ -294,7 +294,7 @@
       "website_url": "https://www.graphhopper.com",
       "docs_url": "https://github.com/imbue-openhost/bottled-graphhopper#readme",
       "openhost_integration_score": 4,
-      "openhost_integration_score_explanation": "Stateless routing engine behind OpenHost zone auth with a small owner-only region admin; no accounts and nothing to leak, but no full owner session."
+      "openhost_integration_score_explanation": "Stateless routing engine behind Cloud in a Bottle zone auth with a small owner-only region admin; no accounts and nothing to leak, but no full owner session."
     },
     {
       "name": "hidden-service",
@@ -317,7 +317,7 @@
       "website_url": "https://github.com/imbue-openhost/bottled-hidden-service",
       "docs_url": "https://github.com/imbue-openhost/bottled-hidden-service#readme",
       "openhost_integration_score": 2,
-      "openhost_integration_score_explanation": "Runs and persists pages correctly, but the editor does no OpenHost SSO of its own; owner access relies on the router gating the admin web port. The public capsule is anonymous over Tor."
+      "openhost_integration_score_explanation": "Runs and persists pages correctly, but the editor does no Cloud in a Bottle SSO of its own; owner access relies on the router gating the admin web port. The public capsule is anonymous over Tor."
     },
     {
       "name": "imbue-catalyst",
@@ -385,7 +385,7 @@
       "website_url": "https://jitsi.org",
       "docs_url": "https://github.com/imbue-openhost/bottled-jitsi#readme",
       "openhost_integration_score": 3,
-      "openhost_integration_score_explanation": "Anyone with the meeting URL can join by design; no per-user OpenHost login, which fits the conferencing model."
+      "openhost_integration_score_explanation": "Anyone with the meeting URL can join by design; no per-user Cloud in a Bottle login, which fits the conferencing model."
     },
     {
       "name": "lila",
@@ -407,7 +407,7 @@
       "website_url": "https://lichess.org",
       "docs_url": "https://github.com/imbue-openhost/bottled-lila#readme",
       "openhost_integration_score": 4,
-      "openhost_integration_score_explanation": "Zone owner is auto-logged in as admin with zero clicks; shared challenge/game links work for anonymous guests without an OpenHost account, and AI/bot games play. Short of 5 because extra registered players still need Lila-local accounts."
+      "openhost_integration_score_explanation": "Zone owner is auto-logged in as admin with zero clicks; shared challenge/game links work for anonymous guests without a Cloud in a Bottle account, and AI/bot games play. Short of 5 because extra registered players still need Lila-local accounts."
     },
     {
       "name": "limesurvey",
@@ -538,7 +538,7 @@
       "website_url": "https://miniflux.app",
       "docs_url": "https://github.com/imbue-openhost/bottled-miniflux#readme",
       "openhost_integration_score": 4,
-      "openhost_integration_score_explanation": "Zone owner is auto-logged in via OpenHost SSO; bundled Postgres persists feeds cleanly."
+      "openhost_integration_score_explanation": "Zone owner is auto-logged in via Cloud in a Bottle SSO; bundled Postgres persists feeds cleanly."
     },
     {
       "name": "mirotalk-p2p",
@@ -631,7 +631,7 @@
       "website_url": "https://onionshare.org",
       "docs_url": "https://github.com/imbue-openhost/bottled-onionshare#readme",
       "openhost_integration_score": 2,
-      "openhost_integration_score_explanation": "Runs and persists shares correctly, but the app does no OpenHost SSO of its own; owner access relies on the router gating the admin UI, and recipients use anonymous Tor onion links."
+      "openhost_integration_score_explanation": "Runs and persists shares correctly, but the app does no Cloud in a Bottle SSO of its own; owner access relies on the router gating the admin UI, and recipients use anonymous Tor onion links."
     },
     {
       "name": "openchamber",
@@ -676,7 +676,7 @@
       "website_url": "https://openclaw.ai/",
       "docs_url": "https://github.com/imbue-openhost/bottled-openclaw#readme",
       "openhost_integration_score": 4,
-      "openhost_integration_score_explanation": "Zone owner is auto-logged in with full operator access via the OpenHost owner header; a single-user assistant, so non-owners are simply rejected and no secrets are written to disk."
+      "openhost_integration_score_explanation": "Zone owner is auto-logged in with full operator access via the Cloud in a Bottle owner header; a single-user assistant, so non-owners are simply rejected and no secrets are written to disk."
     },
     {
       "name": "openweb-ui",
@@ -719,7 +719,7 @@
       "website_url": "https://github.com/imbue-openhost/bottled-oura-connector",
       "docs_url": "https://github.com/imbue-openhost/bottled-oura-connector#readme",
       "openhost_integration_score": 2,
-      "openhost_integration_score_explanation": "Runs and persists data correctly, but there is no OpenHost SSO; access relies on the router gating the app, and the OAuth setup page is not owner-checked in-app."
+      "openhost_integration_score_explanation": "Runs and persists data correctly, but there is no Cloud in a Bottle SSO; access relies on the router gating the app, and the OAuth setup page is not owner-checked in-app."
     },
     {
       "name": "overleaf",
@@ -743,7 +743,7 @@
       "website_url": "https://www.overleaf.com",
       "docs_url": "https://github.com/imbue-openhost/bottled-overleaf#readme",
       "openhost_integration_score": 4,
-      "openhost_integration_score_explanation": "Zone owner is auto-signed into the Overleaf admin with zero clicks via the owner header, and project links can be shared publicly with collaborators who have no OpenHost account, but any named Overleaf accounts you add use app-local passwords created via the admin panel."
+      "openhost_integration_score_explanation": "Zone owner is auto-signed into the Overleaf admin with zero clicks via the owner header, and project links can be shared publicly with collaborators who have no Cloud in a Bottle account, but any named Overleaf accounts you add use app-local passwords created via the admin panel."
     },
     {
       "name": "pihole",
@@ -854,7 +854,7 @@
       "website_url": "https://spliit.app",
       "docs_url": "https://github.com/imbue-openhost/bottled-spliit#readme",
       "openhost_integration_score": 3,
-      "openhost_integration_score_explanation": "The owner reaches the app through zone auth and can share group links with guests who need no OpenHost account, but Spliit has no user accounts so there is no real owner SSO to speak of."
+      "openhost_integration_score_explanation": "The owner reaches the app through zone auth and can share group links with guests who need no Cloud in a Bottle account, but Spliit has no user accounts so there is no real owner SSO to speak of."
     },
     {
       "name": "tangled",
@@ -876,7 +876,7 @@
       "website_url": "https://tangled.org",
       "docs_url": "https://github.com/imbue-openhost/bottled-tangled#readme",
       "openhost_integration_score": 2,
-      "openhost_integration_score_explanation": "Deploys and persists git data cleanly, with an owner-gated in-app form to set your ATProto DID (no OpenHost SSO \u2014 the knot has no browser login). Setup needs external steps: a Bluesky/ATProto account and a verify click on tangled.org to federate."
+      "openhost_integration_score_explanation": "Deploys and persists git data cleanly, with an owner-gated in-app form to set your ATProto DID (no Cloud in a Bottle SSO \u2014 the knot has no browser login). Setup needs external steps: a Bluesky/ATProto account and a verify click on tangled.org to federate."
     },
     {
       "name": "uptime-kuma",
@@ -918,7 +918,7 @@
       "website_url": "https://github.com/dani-garcia/vaultwarden",
       "docs_url": "https://github.com/imbue-openhost/bottled-vaultwarden#readme",
       "openhost_integration_score": 2,
-      "openhost_integration_score_explanation": "Runs and persists data correctly, but there is no OpenHost SSO; the owner signs in through Vaultwarden's own email and master-password login form."
+      "openhost_integration_score_explanation": "Runs and persists data correctly, but there is no Cloud in a Bottle SSO; the owner signs in through Vaultwarden's own email and master-password login form."
     },
     {
       "name": "webtop",
@@ -940,7 +940,7 @@
       "website_url": "https://github.com/linuxserver/docker-webtop",
       "docs_url": "https://github.com/imbue-openhost/bottled-webtop#readme",
       "openhost_integration_score": 2,
-      "openhost_integration_score_explanation": "Desktop session persists under the home dir, but you reach it through the app's own gate rather than OpenHost auto-login."
+      "openhost_integration_score_explanation": "Desktop session persists under the home dir, but you reach it through the app's own gate rather than Cloud in a Bottle auto-login."
     },
     {
       "name": "wg-easy",
@@ -965,5 +965,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-08-12T13:36:24Z"
+  "generated_at": "2026-08-12T23:08:11Z"
 }

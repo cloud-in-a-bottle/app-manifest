@@ -1,6 +1,6 @@
 # openhost-apps
 
-The official OpenHost app catalog feed. Consumed by [`openhost-catalog`](https://github.com/imbue-openhost/openhost-catalog) to populate its app listing.
+The official Cloud in a Bottle app catalog feed. Consumed by [`openhost-catalog`](https://github.com/imbue-openhost/openhost-catalog) to populate its app listing.
 
 This repo is data-only. The Go/Python code that reads this feed lives elsewhere.
 
@@ -29,7 +29,7 @@ The feed follows the `openhost.catalog.v1` schema. Each app entry has:
 | `categories`   | no       | Array of categories |
 | `website_url`  | no       | Upstream project homepage |
 | `docs_url`     | no       | Documentation link |
-| `openhost_integration_score` | no | Integer 1-5 rating how natively the app integrates with OpenHost (SSO, data conventions, guest handling). Omit for unrated apps. See [SCORING.md](SCORING.md). |
+| `openhost_integration_score` | no | Integer 1-5 rating how natively the app integrates with Cloud in a Bottle (SSO, data conventions, guest handling). Omit for unrated apps. See [SCORING.md](SCORING.md). |
 | `openhost_integration_score_explanation` | no | One short sentence explaining *why* the app earned its score, shown in the catalog UI. Omit when unrated. See [SCORING.md](SCORING.md). |
 
 The `name` field is the app's identifier in the catalog: it is used in catalog URLs, pre-filled as the default deployed app name when installing, and must be unique within a source.
@@ -38,7 +38,7 @@ The `name` field is the app's identifier in the catalog: it is used in catalog U
 
 Each app may carry an `openhost_integration_score` (1-5) plus a one-sentence
 `openhost_integration_score_explanation`. The score rates how natively the app
-behaves on OpenHost — primarily SSO quality, data/secret conventions, and guest
+behaves on Cloud in a Bottle — primarily SSO quality, data/secret conventions, and guest
 handling — **not** how good the upstream project is.
 
 The full rubric and the checklist for scoring an app live in **[SCORING.md](SCORING.md)**.

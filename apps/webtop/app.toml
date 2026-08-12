@@ -9,4 +9,4 @@ tags = ["desktop", "xfce", "linux", "browser"]
 categories = ["productivity", "development"]
 
 openhost_integration_score = 2
-openhost_integration_score_explanation = "Desktop session persists under the home dir, but you reach it through the app's own gate rather than OpenHost auto-login."
+openhost_integration_score_explanation = "Desktop session persists under the home dir, but you reach it through the app's own gate rather than Cloud in a Bottle auto-login."

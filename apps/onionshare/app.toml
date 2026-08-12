@@ -9,4 +9,4 @@ tags = ["tor", "privacy", "onion", "file-sharing"]
 categories = ["privacy", "utility", "networking"]
 
 openhost_integration_score = 2
-openhost_integration_score_explanation = "Runs and persists shares correctly, but the app does no OpenHost SSO of its own; owner access relies on the router gating the admin UI, and recipients use anonymous Tor onion links."
+openhost_integration_score_explanation = "Runs and persists shares correctly, but the app does no Cloud in a Bottle SSO of its own; owner access relies on the router gating the admin UI, and recipients use anonymous Tor onion links."

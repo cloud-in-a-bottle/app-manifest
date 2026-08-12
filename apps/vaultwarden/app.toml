@@ -9,4 +9,4 @@ tags = ["passwords", "privacy", "bitwarden"]
 categories = ["privacy", "utility"]
 
 openhost_integration_score = 2
-openhost_integration_score_explanation = "Runs and persists data correctly, but there is no OpenHost SSO; the owner signs in through Vaultwarden's own email and master-password login form."
+openhost_integration_score_explanation = "Runs and persists data correctly, but there is no Cloud in a Bottle SSO; the owner signs in through Vaultwarden's own email and master-password login form."
