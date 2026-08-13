@@ -1,4 +1,4 @@
-# openhost-apps
+# app-manifest
 
 The official Cloud in a Bottle app catalog feed. Consumed by [`openhost-catalog`](https://github.com/imbue-openhost/openhost-catalog) to populate its app listing.
 
