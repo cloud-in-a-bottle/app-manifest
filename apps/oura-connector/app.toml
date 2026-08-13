@@ -2,9 +2,9 @@
 name = "oura-connector"
 title = "Oura Connector"
 description = "Imports, stores, and displays personal health data from Oura smart rings — including sleep, activity, and readiness metrics — and exposes the collected data through an API for other apps."
-repo_url = "https://github.com/imbue-openhost/bottled-oura-connector"
-website_url = "https://github.com/imbue-openhost/bottled-oura-connector"
-docs_url = "https://github.com/imbue-openhost/bottled-oura-connector#readme"
+repo_url = "https://github.com/imbue-openhost/oura-connector"
+website_url = "https://github.com/imbue-openhost/oura-connector"
+docs_url = "https://github.com/imbue-openhost/oura-connector#readme"
 tags = ["oura", "fitness", "data"]
 categories = ["utility", "data-liberation"]
 

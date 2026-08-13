@@ -7,7 +7,7 @@
       "name": "apple-health-connector",
       "title": "Apple Health Connector",
       "description": "Ports over, collects, and analyzes data from Apple Health",
-      "repo_url": "https://github.com/imbue-openhost/bottled-apple-health-connector",
+      "repo_url": "https://github.com/imbue-openhost/apple-health-connector",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -20,8 +20,8 @@
         "utility",
         "data-liberation"
       ],
-      "website_url": "https://github.com/imbue-openhost/bottled-apple-health-connector",
-      "docs_url": "https://github.com/imbue-openhost/bottled-apple-health-connector#readme",
+      "website_url": "https://github.com/imbue-openhost/apple-health-connector",
+      "docs_url": "https://github.com/imbue-openhost/apple-health-connector#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Zone owner is auto-logged into the dashboard with zero clicks; the machine ingest endpoint is public and gated by a self-issued API key, as expected for device uploads."
     },
@@ -29,7 +29,7 @@
       "name": "backup",
       "title": "Backup",
       "description": "Back up all Cloud in a Bottle data to any Restic provider",
-      "repo_url": "https://github.com/imbue-openhost/openhost-backup",
+      "repo_url": "https://github.com/imbue-openhost/backup",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -39,8 +39,8 @@
       "categories": [
         "utility"
       ],
-      "website_url": "https://github.com/imbue-openhost/openhost-backup",
-      "docs_url": "https://github.com/imbue-openhost/openhost-backup#readme",
+      "website_url": "https://github.com/imbue-openhost/backup",
+      "docs_url": "https://github.com/imbue-openhost/backup#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": ""
     },
@@ -165,7 +165,7 @@
       "name": "code-completion",
       "title": "Code Completion",
       "description": "Code completion server with model management UI and OpenAI-compatible API.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-code-completion",
+      "repo_url": "https://github.com/imbue-openhost/code-completion",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -180,8 +180,8 @@
         "development",
         "productivity"
       ],
-      "website_url": "https://github.com/imbue-openhost/bottled-code-completion",
-      "docs_url": "https://github.com/imbue-openhost/bottled-code-completion#readme",
+      "website_url": "https://github.com/imbue-openhost/code-completion",
+      "docs_url": "https://github.com/imbue-openhost/code-completion#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Zone owner reaches the management UI via router gating (no login form) and the OpenAI-compatible API is gated by an app-issued token; access is perimeter-based rather than a full owner session."
     },
@@ -189,7 +189,7 @@
       "name": "community-chat",
       "title": "Community Chat",
       "description": "Matrix Synapse homeserver with a bundled Cinny web client. End-to-end encrypted messaging, owner single sign-on, and a one-click join of the Cloud in a Bottle community space.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-community-chat",
+      "repo_url": "https://github.com/imbue-openhost/bottled-community-chat",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -204,7 +204,7 @@
         "privacy"
       ],
       "website_url": "https://matrix.org",
-      "docs_url": "https://github.com/imbue-openhost/openhost-community-chat#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-community-chat#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "The owner is auto-logged-in via SSO into the bundled web client (no login form), data persists, and the app self-restarts to apply settings. Short of 5 because it is single-owner: others who join get Synapse-local accounts, not Cloud in a Bottle SSO."
     },
@@ -212,7 +212,7 @@
       "name": "filestash",
       "title": "Filestash",
       "description": "A powerful web-based file management system, compatible with SFTP, S3, and Google Drive",
-      "repo_url": "https://github.com/imbue-openhost/openhost-filestash",
+      "repo_url": "https://github.com/imbue-openhost/bottled-filestash",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -225,7 +225,7 @@
         "productivity"
       ],
       "website_url": "https://www.filestash.app/",
-      "docs_url": "https://github.com/imbue-openhost/openhost-filestash#readme",
+      "docs_url": "https://github.com/imbue-openhost/bottled-filestash#readme",
       "openhost_integration_score": 4,
       "openhost_integration_score_explanation": "Owner is auto-logged into the file manager with zero clicks via passthrough auth; public share links aren't exposed, so they require owner login too."
     },
@@ -300,7 +300,7 @@
       "name": "hidden-service",
       "title": "Tor Hidden Service",
       "description": "Tor hidden service with a simple page editor CMS.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-hidden-service",
+      "repo_url": "https://github.com/imbue-openhost/hidden-service",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -314,8 +314,8 @@
         "utility",
         "networking"
       ],
-      "website_url": "https://github.com/imbue-openhost/bottled-hidden-service",
-      "docs_url": "https://github.com/imbue-openhost/bottled-hidden-service#readme",
+      "website_url": "https://github.com/imbue-openhost/hidden-service",
+      "docs_url": "https://github.com/imbue-openhost/hidden-service#readme",
       "openhost_integration_score": 2,
       "openhost_integration_score_explanation": "Runs and persists pages correctly, but the editor does no Cloud in a Bottle SSO of its own; owner access relies on the router gating the admin web port. The public capsule is anonymous over Tor."
     },
@@ -704,7 +704,7 @@
       "name": "oura-connector",
       "title": "Oura Connector",
       "description": "Imports, stores, and displays personal health data from Oura smart rings \u2014 including sleep, activity, and readiness metrics \u2014 and exposes the collected data through an API for other apps.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-oura-connector",
+      "repo_url": "https://github.com/imbue-openhost/oura-connector",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -716,8 +716,8 @@
         "utility",
         "data-liberation"
       ],
-      "website_url": "https://github.com/imbue-openhost/bottled-oura-connector",
-      "docs_url": "https://github.com/imbue-openhost/bottled-oura-connector#readme",
+      "website_url": "https://github.com/imbue-openhost/oura-connector",
+      "docs_url": "https://github.com/imbue-openhost/oura-connector#readme",
       "openhost_integration_score": 2,
       "openhost_integration_score_explanation": "Runs and persists data correctly, but there is no Cloud in a Bottle SSO; access relies on the router gating the app, and the OAuth setup page is not owner-checked in-app."
     },
@@ -965,5 +965,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-08-12T23:08:11Z"
+  "generated_at": "2026-08-13T15:36:16Z"
 }
