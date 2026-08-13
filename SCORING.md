@@ -11,7 +11,7 @@ project with a clunky OpenHost integration scores low; a simple app that
 integrates perfectly scores high.
 
 This document is the canonical rubric. It is referenced by both this feed repo
-([openhost-apps](https://github.com/imbue-openhost/openhost-apps)) and the
+([app-manifest](https://github.com/imbue-openhost/app-manifest)) and the
 consumer ([openhost-catalog](https://github.com/imbue-openhost/openhost-catalog)).
 
 ## What the number means
