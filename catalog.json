@@ -90,6 +90,30 @@
       "openhost_integration_score_explanation": "Owner lands signed in with zero clicks via a real server-minted PDS session while federation paths stay anonymously reachable, but the SSO app-password and PDS identity secrets are persisted as 0600 files rather than injected directly."
     },
     {
+      "name": "bottled-pi-cloud-agent",
+      "title": "Bottled Pi Cloud Agent",
+      "description": "Tabbed in-browser terminals running pi, an OpenRouter-backed coding agent, with a cloned openhost repo for building and debugging apps.",
+      "repo_url": "https://github.com/boweiliu/bottled-pi-cloud-agent",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "ai",
+        "code",
+        "agents",
+        "terminal",
+        "development"
+      ],
+      "categories": [
+        "ai",
+        "development",
+        "productivity"
+      ],
+      "website_url": "https://github.com/boweiliu/bottled-pi-cloud-agent",
+      "docs_url": "https://github.com/boweiliu/bottled-pi-cloud-agent#readme",
+      "openhost_integration_score": 4,
+      "openhost_integration_score_explanation": "Owner reaches the terminal via router gating (no login form), and API keys are injected from the secrets app rather than written to disk."
+    },
+    {
       "name": "calibre-web",
       "title": "Calibre-Web",
       "description": "Self-hosted web app for browsing, reading, and downloading your ebook library, with an OPDS feed, Kobo sync, and per-user access \u2014 a clean web front end for a Calibre library.",
@@ -941,5 +965,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-08-13T18:13:57Z"
+  "generated_at": "2026-08-13T21:50:14Z"
 }
