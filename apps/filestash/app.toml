@@ -2,9 +2,9 @@
 name = "filestash"
 title = "Filestash"
 description = "A powerful web-based file management system, compatible with SFTP, S3, and Google Drive"
-repo_url = "https://github.com/imbue-openhost/openhost-filestash"
+repo_url = "https://github.com/imbue-openhost/bottled-filestash"
 website_url = "https://www.filestash.app/"
-docs_url = "https://github.com/imbue-openhost/openhost-filestash#readme"
+docs_url = "https://github.com/imbue-openhost/bottled-filestash#readme"
 tags = ["files", "privacy"]
 categories = ["privacy", "utility", "productivity"]
 

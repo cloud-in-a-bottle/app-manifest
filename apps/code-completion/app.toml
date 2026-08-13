@@ -2,9 +2,9 @@
 name = "code-completion"
 title = "Code Completion"
 description = "Code completion server with model management UI and OpenAI-compatible API."
-repo_url = "https://github.com/imbue-openhost/bottled-code-completion"
-website_url = "https://github.com/imbue-openhost/bottled-code-completion"
-docs_url = "https://github.com/imbue-openhost/bottled-code-completion#readme"
+repo_url = "https://github.com/imbue-openhost/code-completion"
+website_url = "https://github.com/imbue-openhost/code-completion"
+docs_url = "https://github.com/imbue-openhost/code-completion#readme"
 tags = ["ai", "code", "llm", "completion", "openai"]
 categories = ["ai", "development", "productivity"]
 
