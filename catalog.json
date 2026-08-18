@@ -227,28 +227,6 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in as admin; invited users still create Forgejo-local password accounts."
     },
     {
-      "name": "gemini",
-      "title": "Gemini",
-      "description": "Agate-based Gemini protocol server for hosting a capsule of static text documents, browsable with any Gemini client over TLS on the protocol's standard port 1965.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-gemini",
-      "repo_ref": "",
-      "icon_url": "",
-      "tags": [
-        "gemini",
-        "smolnet",
-        "tls",
-        "capsule"
-      ],
-      "categories": [
-        "networking",
-        "publishing"
-      ],
-      "website_url": "https://geminiprotocol.net",
-      "docs_url": "https://github.com/imbue-openhost/bottled-gemini#readme",
-      "openhost_integration_score": 4,
-      "openhost_integration_score_explanation": "Owner is auto-logged into the gemtext editor and guests get the public landing page; the Gemini capsule itself is public by protocol on port 1965."
-    },
-    {
       "name": "graphhopper",
       "title": "GraphHopper",
       "description": "Self-hosted routing engine built on OpenStreetMap data, with car, bike, and foot navigation profiles and a web map UI offering turn-by-turn directions.",
@@ -941,5 +919,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-08-13T18:13:57Z"
+  "generated_at": "2026-08-18T17:17:11Z"
 }
