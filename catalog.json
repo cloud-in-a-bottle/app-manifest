@@ -406,7 +406,7 @@
       "website_url": "https://github.com/imbue-openhost/md-notes",
       "docs_url": "https://github.com/imbue-openhost/md-notes#readme",
       "openhost_integration_score": 5,
-      "openhost_integration_score_explanation": "Internally keeps vaults and has sharing function for other instances"
+      "openhost_integration_score_explanation": "Owner is auto-logged-in via the trusted owner header (non-owners hit the zone login); per-note share links serve accountless guests, and whole vaults can be shared with other Cloud in a Bottle users' instances."
     },
     {
       "name": "mealie",
@@ -874,5 +874,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-08-18T17:23:34Z"
+  "generated_at": "2026-08-19T17:58:04Z"
 }
