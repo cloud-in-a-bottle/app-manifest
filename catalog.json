@@ -850,29 +850,7 @@
       "docs_url": "https://github.com/imbue-openhost/bottled-vaultwarden#readme",
       "openhost_integration_score": 2,
       "openhost_integration_score_explanation": "Runs and persists data correctly, but there is no Cloud in a Bottle SSO; the owner signs in through Vaultwarden's own email and master-password login form."
-    },
-    {
-      "name": "wg-easy",
-      "title": "wg-easy",
-      "description": "A WireGuard VPN server with a web UI for easily creating and managing client connections, including QR codes and downloadable device configs.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-wg-easy",
-      "repo_ref": "",
-      "icon_url": "",
-      "tags": [
-        "vpn",
-        "wireguard",
-        "networking",
-        "privacy"
-      ],
-      "categories": [
-        "networking",
-        "privacy"
-      ],
-      "website_url": "https://github.com/wg-easy/wg-easy",
-      "docs_url": "https://github.com/imbue-openhost/bottled-wg-easy#readme",
-      "openhost_integration_score": 3,
-      "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-08-19T17:58:04Z"
+  "generated_at": "2026-08-19T18:46:45Z"
 }
