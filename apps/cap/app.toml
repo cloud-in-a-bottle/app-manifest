@@ -2,11 +2,11 @@
 name = "cap"
 title = "Cap"
 description = "Open-source Loom alternative — record your screen in the browser and share links, fully self-hosted."
-repo_url = "https://github.com/CarlKho-Minerva/openhost-cap"
+repo_url = "https://github.com/cloud-in-a-bottle/openhost-cap"
 website_url = "https://cap.so"
-docs_url = "https://github.com/CarlKho-Minerva/openhost-cap#readme"
+docs_url = "https://github.com/cloud-in-a-bottle/openhost-cap#readme"
 tags = ["screen-recording", "video", "loom-alternative", "sharing", "self-hosted"]
 categories = ["utility", "entertainment", "privacy"]
 
-openhost_integration_score = 2
-openhost_integration_score_explanation = "The owner reaches Cap through zone auth and share links play for accountless guests, but Cap keeps its own email-code login on top, so the owner signs in manually rather than via Cloud in a Bottle SSO."
+openhost_integration_score = 4
+openhost_integration_score_explanation = "Owner is auto-logged into a seeded Cap account with zero clicks via trusted-proxy SSO (no email code); share links play for accountless guests, and video blobs stay on the instance."
