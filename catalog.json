@@ -627,8 +627,8 @@
       ],
       "website_url": "https://github.com/imbue-openhost/oura-connector",
       "docs_url": "https://github.com/imbue-openhost/oura-connector#readme",
-      "openhost_integration_score": 2,
-      "openhost_integration_score_explanation": "Runs and persists data correctly, but there is no Cloud in a Bottle SSO; access relies on the router gating the app, and the OAuth setup page is not owner-checked in-app."
+      "openhost_integration_score": 4,
+      "openhost_integration_score_explanation": "Zone owner is auto-recognized and reaches the dashboard and data with zero clicks (no app login); non-owners are bounced to the zone login. Perimeter-based rather than a full owner session."
     },
     {
       "name": "overleaf",
@@ -830,5 +830,5 @@
       "openhost_integration_score_explanation": "Runs and persists data correctly, but there is no Cloud in a Bottle SSO; the owner signs in through Vaultwarden's own email and master-password login form."
     }
   ],
-  "generated_at": "2026-08-19T19:28:13Z"
+  "generated_at": "2026-08-19T21:37:43Z"
 }
