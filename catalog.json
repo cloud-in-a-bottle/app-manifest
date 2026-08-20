@@ -520,29 +520,6 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged into an admin account with zero clicks via the trusted owner header bridged to user_saml; sync clients (WebDAV) and public share links pass through without owner login, and non-owner visitors are never signed in as the owner."
     },
     {
-      "name": "onionshare",
-      "title": "OnionShare",
-      "description": "Anonymously share files, host a website, or run a chat room over Tor hidden services.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-onionshare",
-      "repo_ref": "",
-      "icon_url": "",
-      "tags": [
-        "tor",
-        "privacy",
-        "onion",
-        "file-sharing"
-      ],
-      "categories": [
-        "privacy",
-        "utility",
-        "networking"
-      ],
-      "website_url": "https://onionshare.org",
-      "docs_url": "https://github.com/imbue-openhost/bottled-onionshare#readme",
-      "openhost_integration_score": 2,
-      "openhost_integration_score_explanation": "Runs and persists shares correctly, but the app does no Cloud in a Bottle SSO of its own; owner access relies on the router gating the admin UI, and recipients use anonymous Tor onion links."
-    },
-    {
       "name": "openchamber",
       "title": "OpenChamber",
       "description": "Web workspace for running and supervising AI coding agents, with session goals, diff review, GitHub workflows, and a built-in terminal.",
@@ -830,5 +807,5 @@
       "openhost_integration_score_explanation": "Runs and persists data correctly, but there is no Cloud in a Bottle SSO; the owner signs in through Vaultwarden's own email and master-password login form."
     }
   ],
-  "generated_at": "2026-08-19T21:37:43Z"
+  "generated_at": "2026-08-20T23:19:18Z"
 }
