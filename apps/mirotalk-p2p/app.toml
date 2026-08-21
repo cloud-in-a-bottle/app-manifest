@@ -6,7 +6,7 @@ repo_url = "https://github.com/imbue-openhost/bottled-mirotalk-p2p"
 website_url = "https://github.com/miroslavpejic85/mirotalk"
 docs_url = "https://github.com/imbue-openhost/bottled-mirotalk-p2p#readme"
 tags = ["video", "conferencing", "webrtc", "p2p", "meetings"]
-categories = ["networking", "privacy"]
+categories = ["utility", "privacy", "networking"]
 
 openhost_integration_score = 4
 openhost_integration_score_explanation = "Zone owner is auto-logged in as host; guests join via the room URL. Signaling-only, no media stored."

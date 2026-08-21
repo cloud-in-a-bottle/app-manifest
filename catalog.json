@@ -129,8 +129,9 @@
       ],
       "categories": [
         "utility",
-        "entertainment",
-        "privacy"
+        "publishing",
+        "privacy",
+        "productivity"
       ],
       "website_url": "https://cap.so",
       "docs_url": "https://github.com/cloud-in-a-bottle/openhost-cap#readme",
@@ -196,7 +197,6 @@
         "privacy"
       ],
       "categories": [
-        "privacy",
         "utility",
         "productivity"
       ],
@@ -311,7 +311,8 @@
       ],
       "categories": [
         "utility",
-        "privacy"
+        "privacy",
+        "networking"
       ],
       "website_url": "https://jitsi.org",
       "docs_url": "https://github.com/imbue-openhost/bottled-jitsi#readme",
@@ -378,8 +379,7 @@
         "health"
       ],
       "categories": [
-        "utility",
-        "productivity"
+        "utility"
       ],
       "website_url": "https://github.com/Cawlumm/lyftr",
       "docs_url": "https://github.com/imbue-openhost/bottled-lyftr#readme",
@@ -464,8 +464,9 @@
         "meetings"
       ],
       "categories": [
-        "networking",
-        "privacy"
+        "utility",
+        "privacy",
+        "networking"
       ],
       "website_url": "https://github.com/miroslavpejic85/mirotalk",
       "docs_url": "https://github.com/imbue-openhost/bottled-mirotalk-p2p#readme",
@@ -556,7 +557,6 @@
       ],
       "categories": [
         "ai",
-        "development",
         "productivity"
       ],
       "website_url": "https://openclaw.ai/",
@@ -734,7 +734,6 @@
         "groups"
       ],
       "categories": [
-        "productivity",
         "utility"
       ],
       "website_url": "https://spliit.app",
@@ -807,5 +806,5 @@
       "openhost_integration_score_explanation": "Runs and persists data correctly, but there is no Cloud in a Bottle SSO; the owner signs in through Vaultwarden's own email and master-password login form."
     }
   ],
-  "generated_at": "2026-08-20T23:19:18Z"
+  "generated_at": "2026-08-21T19:20:12Z"
 }

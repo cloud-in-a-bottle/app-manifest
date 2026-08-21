@@ -6,7 +6,7 @@ repo_url = "https://github.com/imbue-openhost/bottled-lyftr"
 website_url = "https://github.com/Cawlumm/lyftr"
 docs_url = "https://github.com/imbue-openhost/bottled-lyftr#readme"
 tags = ["fitness", "workout", "weightlifting", "bodyweight", "health"]
-categories = ["utility", "productivity"]
+categories = ["utility"]
 
 openhost_integration_score = 4
 openhost_integration_score_explanation = "Zone owner is auto-logged in with zero clicks; guests hit the app's login. Single-user tracker with no accounts to bootstrap and nothing left on disk."
