@@ -6,7 +6,7 @@ repo_url = "https://github.com/cloud-in-a-bottle/openhost-cap"
 website_url = "https://cap.so"
 docs_url = "https://github.com/cloud-in-a-bottle/openhost-cap#readme"
 tags = ["screen-recording", "video", "loom-alternative", "sharing", "self-hosted"]
-categories = ["utility", "entertainment", "privacy"]
+categories = ["utility", "publishing", "privacy", "productivity"]
 
 openhost_integration_score = 4
 openhost_integration_score_explanation = "Owner is auto-logged into a seeded Cap account with zero clicks via trusted-proxy SSO (no email code); share links play for accountless guests, and video blobs stay on the instance."

@@ -6,7 +6,7 @@ repo_url = "https://github.com/imbue-openhost/bottled-filestash"
 website_url = "https://www.filestash.app/"
 docs_url = "https://github.com/imbue-openhost/bottled-filestash#readme"
 tags = ["files", "privacy"]
-categories = ["privacy", "utility", "productivity"]
+categories = ["utility", "productivity"]
 
 openhost_integration_score = 4
 openhost_integration_score_explanation = "Owner is auto-logged into the file manager with zero clicks via passthrough auth; public share links aren't exposed, so they require owner login too."

@@ -6,7 +6,7 @@ repo_url = "https://github.com/imbue-openhost/bottled-spliit"
 website_url = "https://spliit.app"
 docs_url = "https://github.com/imbue-openhost/bottled-spliit#readme"
 tags = ["expenses", "money", "bill-splitting", "groups"]
-categories = ["productivity", "utility"]
+categories = ["utility"]
 
 openhost_integration_score = 3
 openhost_integration_score_explanation = "The owner reaches the app through zone auth and can share group links with guests who need no Cloud in a Bottle account, but Spliit has no user accounts so there is no real owner SSO to speak of."

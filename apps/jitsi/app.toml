@@ -6,7 +6,7 @@ repo_url = "https://github.com/imbue-openhost/bottled-jitsi"
 website_url = "https://jitsi.org"
 docs_url = "https://github.com/imbue-openhost/bottled-jitsi#readme"
 tags = ["video", "conferencing", "webrtc", "sfu", "meetings"]
-categories = ["utility", "privacy"]
+categories = ["utility", "privacy", "networking"]
 
 openhost_integration_score = 3
 openhost_integration_score_explanation = "Anyone with the meeting URL can join by design; no per-user Cloud in a Bottle login, which fits the conferencing model."
