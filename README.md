@@ -22,7 +22,7 @@ The feed follows the `openhost.catalog.v1` schema. Each app entry has:
 | `name`         | yes      | The name the app deploys as. Must be lowercase alphanumeric with optional interior hyphens. Drop any `openhost-` prefix. |
 | `title`        | yes      | Display name |
 | `description`  | yes      | One-line summary |
-| `repo_url`     | yes      | GitHub repo containing the app's `openhost.toml` manifest |
+| `repo_url`     | yes      | GitHub repo containing the app's `cloudinabottle.toml` manifest (legacy `openhost.toml` also supported) |
 | `repo_ref`     | no       | Pin to a branch, tag, or commit (default: repo's default branch) |
 | `icon_url`     | no       | URL to an icon image |
 | `tags`         | no       | Array of search tags |
@@ -92,15 +92,18 @@ python3 generate.py --verify-repos lila forgejo  # only these apps
 ```
 
 Queries the GitHub API to confirm each app's `repo_url` points at a reachable,
-public repository that contains an `openhost.toml` manifest at its root (on
-`repo_ref`, if pinned). Exits non-zero if a repo is missing/private or the
-manifest is absent. Network errors (including rate limits) warn but don't fail.
+public repository that contains a `cloudinabottle.toml` manifest at its root,
+falling back to legacy `openhost.toml` (on `repo_ref`, if pinned). Both filenames
+are checked at the pinned ref before the default branch is consulted for
+diagnostics; a manifest found only on the default branch cannot validate a pin.
+Exits non-zero if a repo is missing/private or the manifest is absent. Network
+errors (including rate limits) warn on full scans but fail targeted checks.
 Kept out of the default generate/`--check` path so local runs stay offline. On a
 PR, CI verifies only the apps whose `app.toml` changed, so it scales with the
 diff rather than the catalog.
 
 **Auth.** The unauthenticated GitHub API allows 60 requests/hr, but a full scan
-makes up to two requests per app, so it needs a token. Set `GITHUB_TOKEN` (or
+can require several requests per app, so it needs a token. Set `GITHUB_TOKEN` (or
 `GH_TOKEN`) to a token — any token works; it only lifts the rate limit and needs
 no access to the apps' repos. Locally, `GITHUB_TOKEN=$(gh auth token) python3
 generate.py --verify-repos` works.
@@ -120,6 +123,15 @@ pre-commit install
 This installs a hook that runs `generate.py --check` before each commit and
 blocks stale `catalog.json` from being committed, so a local checkout stays in
 sync without waiting for CI.
+
+### Validator regression tests
+
+```bash
+python3 -m unittest -v test_generate
+```
+
+These offline tests cover manifest filenames, pinned refs, and repository
+verification failures and skips. CI runs them on every PR and push to `main`.
 
 ### CI
 
