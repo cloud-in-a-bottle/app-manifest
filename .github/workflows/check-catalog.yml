@@ -57,6 +57,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Test repository validation
+        run: python3 -m unittest -v test_generate
       - name: Regenerate catalog.json (validates the TOML)
         run: python3 generate.py
       - name: Verify changed repos are public
@@ -103,6 +105,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Test repository validation
+        run: python3 -m unittest -v test_generate
       - name: Regenerate catalog.json (validates the TOML)
         run: python3 generate.py
       - name: Commit catalog.json to main

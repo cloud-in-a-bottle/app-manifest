@@ -30,6 +30,10 @@ _REPO_URL_PATTERN = re.compile(
     r"^https://github\.com/(?P<org>[A-Za-z0-9-]+)/(?P<repo>[A-Za-z0-9._-]+?)(?:\.git)?/?$"
 )
 
+# Match compute_space.core.manifest.MANIFEST_FILENAMES in the platform:
+# prefer the canonical name, with the legacy name as a fallback.
+MANIFEST_FILENAMES = ("cloudinabottle.toml", "openhost.toml")
+
 VALID_CATEGORIES = {
     "ai",
     "development",
@@ -103,28 +107,26 @@ def check_repo_public(slug: str, token: str = "") -> tuple[bool, str]:
 
 
 def check_manifest(slug: str, ref: str, token: str = "") -> tuple[bool, str]:
-    """Check the repo contains an openhost.toml manifest at its root (on ref, if
-    pinned). Same (ok, message) contract as check_repo_public."""
-    base = f"https://api.github.com/repos/{slug}/contents/openhost.toml"
-    url = base + ("?ref=" + urllib.parse.quote(ref) if ref else "")
-    status, body = _github_get(url, token)
-    if status == 200:
-        return True, ""
-    if status == 404:
-        # A pinned ref that 404s may be a deleted/renamed ref rather than a
-        # missing file; distinguish by re-checking the default branch.
-        if ref:
-            base_status, base_body = _github_get(base, token)
-            if base_status == 200:
-                return False, f"openhost.toml exists on default branch but not at repo_ref {ref!r}"
-            if base_status != 404:
-                return _skip(base_status, base_body, "manifest not checked")
-        return False, "missing openhost.toml"
-    return _skip(status, body, "manifest not checked")
+    """Check for a root cloudinabottle.toml, falling back to legacy openhost.toml
+    (on ref, if pinned). Same (ok, message) contract as check_repo_public."""
+    # Check every supported name on the pinned ref before consulting the default
+    # branch, which only diagnoses a missing/deleted ref and cannot validate it.
+    for candidate_ref in (ref, "") if ref else ("",):
+        for name in MANIFEST_FILENAMES:
+            base = f"https://api.github.com/repos/{slug}/contents/{name}"
+            url = base + ("?ref=" + urllib.parse.quote(candidate_ref, safe="") if candidate_ref else "")
+            status, body = _github_get(url, token)
+            if status == 200:
+                if candidate_ref == ref:
+                    return True, ""
+                return False, f"{name} exists on default branch but not at repo_ref {ref!r}"
+            if status != 404:
+                return _skip(status, body, "manifest not checked")
+    return False, f"missing manifest (expected {' or '.join(MANIFEST_FILENAMES)})"
 
 
 def verify_repos(feed: dict, names: list[str] | None = None) -> int:
-    """Check apps' repos are public and carry an openhost.toml; with names, only
+    """Check apps' repos are public and carry a supported manifest; with names, only
     those apps. A missing/private repo fails; a rate-limit/outage skip warns on a
     full scan but fails a targeted check, which must validate its changed repos."""
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or ""
@@ -159,7 +161,7 @@ def verify_repos(feed: dict, names: list[str] | None = None) -> int:
     if failures:
         print(
             "error: the following apps do not reference a public repo with an "
-            "openhost.toml manifest:",
+            f"app manifest ({' or '.join(MANIFEST_FILENAMES)}):",
             file=sys.stderr,
         )
         for line in failures:
@@ -320,7 +322,7 @@ def main() -> int:
     parser.add_argument(
         "--verify-repos",
         action="store_true",
-        help="Check apps' repos are public and carry an openhost.toml (network). Does not write.",
+        help="Check apps' repos are public and carry cloudinabottle.toml or legacy openhost.toml (network). Does not write.",
     )
     parser.add_argument(
         "apps",

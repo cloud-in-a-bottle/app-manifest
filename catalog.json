@@ -26,7 +26,7 @@
     {
       "name": "backup",
       "title": "Backup",
-      "description": "Back up all Cloud in a Bottle data to any Restic provider",
+      "description": "Back up app data to storage you choose, using restic.",
       "repo_url": "https://github.com/imbue-openhost/backup",
       "repo_ref": "",
       "icon_url": "",
@@ -776,5 +776,5 @@
       "docs_url": "https://github.com/imbue-openhost/bottled-vaultwarden#readme"
     }
   ],
-  "generated_at": "2026-08-25T23:03:53Z"
+  "generated_at": "2026-09-14T15:49:36Z"
 }
