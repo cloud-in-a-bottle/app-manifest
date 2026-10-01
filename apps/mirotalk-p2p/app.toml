@@ -3,6 +3,8 @@ name = "mirotalk-p2p"
 title = "MiroTalk P2P"
 description = "Open-source WebRTC video conferencing where browsers connect peer-to-peer for real-time audio and video; the server only handles signaling, never media. Includes screen sharing, chat, a collaborative whiteboard, and file sharing."
 repo_url = "https://github.com/imbue-openhost/bottled-mirotalk-p2p"
+# Application: https://github.com/miroslavpejic85/mirotalk/blob/627e9299c15f302236864f9cdf020d1df298ebc8/package.json
+license = "AGPL-3.0-only"
 packaging_license = "MIT"
 website_url = "https://github.com/miroslavpejic85/mirotalk"
 docs_url = "https://github.com/imbue-openhost/bottled-mirotalk-p2p#readme"

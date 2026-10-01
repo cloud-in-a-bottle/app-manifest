@@ -3,6 +3,8 @@ name = "openchamber"
 title = "OpenChamber"
 description = "Web workspace for running and supervising AI coding agents, with session goals, diff review, GitHub workflows, and a built-in terminal."
 repo_url = "https://github.com/imbue-openhost/bottled-openchamber"
+# Application: https://github.com/openchamber/openchamber/blob/v1.18.2/LICENSE
+license = "MIT"
 packaging_license = "MIT"
 website_url = "https://github.com/openchamber/openchamber"
 docs_url = "https://github.com/imbue-openhost/bottled-openchamber#readme"

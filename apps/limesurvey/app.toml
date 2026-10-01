@@ -3,6 +3,8 @@ name = "limesurvey"
 title = "LimeSurvey"
 description = "Self-hosted survey and questionnaire platform with a bundled database, for building and running online surveys."
 repo_url = "https://github.com/imbue-openhost/bottled-limesurvey"
+# Application: https://github.com/LimeSurvey/LimeSurvey/blob/7.0.4+260620/LICENSE
+license = "GPL-2.0-or-later"
 packaging_license = "MIT"
 website_url = "https://www.limesurvey.org"
 docs_url = "https://github.com/imbue-openhost/bottled-limesurvey#readme"

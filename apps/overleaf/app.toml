@@ -3,6 +3,9 @@ name = "overleaf"
 title = "Overleaf"
 description = "Overleaf Community Edition: a self-hosted, collaborative online LaTeX editor with real-time editing and in-browser PDF compilation, with a bundled database."
 repo_url = "https://github.com/imbue-openhost/bottled-overleaf"
+# Community Edition: https://github.com/overleaf/overleaf/blob/e039ad26c5bf5422eb57b89fc7e57c75055e631d/README.md#license
+# Packaging tracks sharelatex/sharelatex:latest.
+license = "AGPL-3.0-only"
 packaging_license = "MIT"
 website_url = "https://www.overleaf.com"
 docs_url = "https://github.com/imbue-openhost/bottled-overleaf#readme"

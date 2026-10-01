@@ -3,6 +3,9 @@ name = "jellyfin"
 title = "Jellyfin"
 description = "Free software media server for streaming your own movies, TV, music, and photos to any device."
 repo_url = "https://github.com/imbue-openhost/bottled-jellyfin"
+# Application: https://github.com/jellyfin/jellyfin/blob/v12.1/LICENSE (packaging tracks latest).
+# Component terms: https://github.com/jellyfin/jellyfin/blob/v12.1/MediaBrowser.Common/MediaBrowser.Common.csproj
+license = "GPL-2.0 (project); GPL-3.0-only (some components)"
 packaging_license = "MIT"
 website_url = "https://jellyfin.org"
 docs_url = "https://github.com/imbue-openhost/bottled-jellyfin#readme"
