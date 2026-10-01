@@ -3,6 +3,7 @@ name = "minecraft"
 title = "Minecraft"
 description = "A self-hosted minecraft server runner"
 repo_url = "https://github.com/imbue-openhost/bottled-minecraft"
+packaging_license = "MIT"
 website_url = "https://github.com/imbue-openhost/bottled-minecraft"
 docs_url = "https://github.com/imbue-openhost/bottled-minecraft#readme"
 tags = ["minecraft", "games"]

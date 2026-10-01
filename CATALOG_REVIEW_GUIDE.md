@@ -37,9 +37,10 @@ review — there is no numeric rating.
    wrapper's README should focus on Cloud in a Bottle; a larger project should
    at least mention and link it (a separate Cloud in a Bottle page is fine).
 
-5. **The repo has a LICENSE.** A wrapper keeps a license compatible with what it
-   packages (a GPL/AGPL app stays GPL/AGPL); original code can use a permissive
-   one.
+5. **Our original code is MIT-licensed.** Original applications and Cloud in a
+   Bottle packaging that we maintain should offer the MIT License, with the full
+   license text and a clear scope. Upstream applications, copied or adapted
+   third-party code, and assets retain their own licenses and copyright notices.
    Record the application's license in the catalog entry's `license` field and
    the packaging's license in `packaging_license`, checking each against its
    license text where applicable.
