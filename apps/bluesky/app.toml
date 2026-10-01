@@ -3,6 +3,10 @@ name = "bluesky"
 title = "Bluesky"
 description = "Your own Bluesky account on your own server: an AT Protocol PDS plus the official web client on one domain, federating with the wider network."
 repo_url = "https://github.com/imbue-openhost/bottled-bluesky"
+# PDS: https://github.com/bluesky-social/pds/blob/d02a23e5ba60b403728697bd50f7be15c69aeb66/service/package.json
+# Web client: https://github.com/bluesky-social/social-app/blob/1c349ad7da4fd835d3bc1067046292fc07f92271/LICENSE
+license = "MIT"
+packaging_license = "MIT"
 website_url = "https://bsky.social"
 docs_url = "https://github.com/imbue-openhost/bottled-bluesky#readme"
 tags = ["bluesky", "atproto", "federation", "social", "pds"]

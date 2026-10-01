@@ -183,6 +183,14 @@ def verify_repos(feed: dict, names: list[str] | None = None) -> int:
     return 0
 
 
+def license_value(app: dict, field: str, path: str) -> str:
+    value = app.get(field, "")
+    if not isinstance(value, str):
+        print(f"error: {path}: [app].{field} must be a string", file=sys.stderr)
+        sys.exit(1)
+    return value.strip()
+
+
 def build_feed(root: str) -> dict:
     """Build the feed dict (excluding generated_at) from the source TOML files."""
     catalog_path = os.path.join(root, "catalog.toml")
@@ -256,6 +264,11 @@ def build_feed(root: str) -> dict:
             "website_url": app.get("website_url", ""),
             "docs_url": app.get("docs_url", ""),
         }
+
+        for field in ("license", "packaging_license"):
+            value = license_value(app, field, app_toml)
+            if value:
+                feed_app[field] = value
 
         apps.append(feed_app)
 

@@ -1,11 +1,14 @@
 """Offline regression tests for catalog repository verification."""
 
 import io
+import json
+from pathlib import Path
+import tempfile
 import unittest
 from contextlib import redirect_stderr, redirect_stdout
 from unittest.mock import call, patch
 
-from generate import check_manifest, verify_repos
+from generate import build_feed, check_manifest, verify_repos
 
 
 REPO = "https://api.github.com/repos/example/app"
@@ -20,6 +23,56 @@ API_ERRORS = (
     (0, "connection timed out"),
     (401, "Unauthorized"),
 )
+
+
+class LicenseMetadataTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        (self.root / "catalog.toml").write_text('[catalog]\nsource_id = "test"\nname = "Test"\n')
+        self.app_dir = self.root / "apps" / "example"
+        self.app_dir.mkdir(parents=True)
+
+    def build(self, fields=""):
+        (self.app_dir / "app.toml").write_text(
+            '[app]\nname = "example"\ntitle = "Example"\ndescription = "An app"\n'
+            'repo_url = "https://github.com/example/app"\n' + fields
+        )
+        return build_feed(str(self.root))["apps"][0]
+
+    def test_existing_entries_omit_license_metadata(self):
+        app = self.build()
+        self.assertNotIn("license", app)
+        self.assertNotIn("packaging_license", app)
+
+    def test_application_and_packaging_are_separate_in_json_feed(self):
+        app = self.build('license = "Apache-2.0"\npackaging_license = "MIT"\n')
+        decoded = json.loads(json.dumps(app))
+        self.assertEqual(decoded["license"], "Apache-2.0")
+        self.assertEqual(decoded["packaging_license"], "MIT")
+
+    def test_strings_are_trimmed_without_inferring_the_other_license(self):
+        for field, other in (("license", "packaging_license"), ("packaging_license", "license")):
+            for value in ("MIT OR Apache-2.0", "LicenseRef-Custom", "Proprietary", ""):
+                with self.subTest(field=field, value=value):
+                    app = self.build(f'{field} = "  {value}  "\n')
+                    if value:
+                        self.assertEqual(app[field], value)
+                    else:
+                        self.assertNotIn(field, app)
+                    self.assertNotIn(other, app)
+
+    def test_non_string_licenses_fail_with_field_and_filename(self):
+        for field in ("license", "packaging_license"):
+            for raw in ("true", "42", '["MIT"]', '{name = "MIT"}'):
+                with self.subTest(field=field, raw=raw):
+                    stderr = io.StringIO()
+                    with redirect_stderr(stderr), self.assertRaises(SystemExit) as error:
+                        self.build(f"{field} = {raw}\n")
+                    self.assertEqual(error.exception.code, 1)
+                    self.assertIn(f"[app].{field} must be a string", stderr.getvalue())
+                    self.assertIn(str(self.app_dir / "app.toml"), stderr.getvalue())
 
 
 class CheckManifestTests(unittest.TestCase):

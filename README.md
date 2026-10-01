@@ -22,6 +22,8 @@ The feed follows the `openhost.catalog.v1` schema. Each app entry has:
 | `name`         | yes      | The name the app deploys as. Must be lowercase alphanumeric with optional interior hyphens. Drop any `openhost-` prefix. |
 | `title`        | yes      | Display name |
 | `description`  | yes      | One-line summary |
+| `license`      | no       | License of the application itself, preferably an SPDX identifier or expression. |
+| `packaging_license` | no  | License of the Cloud in a Bottle packaging, such as the wrapper, Dockerfile, and integration scripts. |
 | `repo_url`     | yes      | GitHub repo containing the app's `cloudinabottle.toml` manifest (legacy `openhost.toml` also supported) |
 | `repo_ref`     | no       | Pin to a branch, tag, or commit (default: repo's default branch) |
 | `icon_url`     | no       | URL to an icon image |
@@ -31,6 +33,22 @@ The feed follows the `openhost.catalog.v1` schema. Each app entry has:
 | `docs_url`     | no       | Documentation link |
 
 The `name` field is the app's identifier in the catalog: it is used in catalog URLs, pre-filled as the default deployed app name when installing, and must be unique within a source.
+
+### License metadata
+
+Declare licenses in the catalog listing, `apps/<name>/app.toml`. The catalog displays the application and packaging licenses independently only on each app's details page. Check each value against the application's or packaging repository's license text; one is not inferred from the other.
+
+```toml
+[app]
+name = "example"
+title = "Example"
+description = "An application packaged for Cloud in a Bottle."
+license = "Apache-2.0"
+packaging_license = "MIT"
+repo_url = "https://github.com/example/packaged-app"
+```
+
+Both fields are optional strings so existing listings and feeds remain compatible. Leading and trailing whitespace is ignored; missing or blank values are omitted from the generated feed and display as "Not specified". Prefer SPDX identifiers or expressions, such as `MIT`, `Apache-2.0`, or `MIT OR Apache-2.0`; custom license names and descriptions are accepted too. These fields describe catalog metadata and are not deployment settings.
 
 ## Getting into the catalog
 

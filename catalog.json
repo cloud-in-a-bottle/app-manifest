@@ -38,7 +38,9 @@
         "utility"
       ],
       "website_url": "https://github.com/imbue-openhost/backup",
-      "docs_url": "https://github.com/imbue-openhost/backup#readme"
+      "docs_url": "https://github.com/imbue-openhost/backup#readme",
+      "license": "MIT",
+      "packaging_license": "MIT"
     },
     {
       "name": "bifrost",
@@ -79,7 +81,9 @@
         "data-liberation"
       ],
       "website_url": "https://bsky.social",
-      "docs_url": "https://github.com/imbue-openhost/bottled-bluesky#readme"
+      "docs_url": "https://github.com/imbue-openhost/bottled-bluesky#readme",
+      "license": "MIT",
+      "packaging_license": "MIT"
     },
     {
       "name": "calibre-web",
@@ -101,7 +105,9 @@
         "entertainment"
       ],
       "website_url": "https://github.com/janeczku/calibre-web",
-      "docs_url": "https://github.com/imbue-openhost/bottled-calibre-web#readme"
+      "docs_url": "https://github.com/imbue-openhost/bottled-calibre-web#readme",
+      "license": "GPL-3.0-or-later",
+      "packaging_license": "MIT"
     },
     {
       "name": "cap",
@@ -289,7 +295,9 @@
         "privacy"
       ],
       "website_url": "https://jellyfin.org",
-      "docs_url": "https://github.com/imbue-openhost/bottled-jellyfin#readme"
+      "docs_url": "https://github.com/imbue-openhost/bottled-jellyfin#readme",
+      "license": "GPL-2.0 (project); GPL-3.0-only (some components)",
+      "packaging_license": "MIT"
     },
     {
       "name": "jitsi",
@@ -352,7 +360,9 @@
         "utility"
       ],
       "website_url": "https://www.limesurvey.org",
-      "docs_url": "https://github.com/imbue-openhost/bottled-limesurvey#readme"
+      "docs_url": "https://github.com/imbue-openhost/bottled-limesurvey#readme",
+      "license": "GPL-2.0-or-later",
+      "packaging_license": "MIT"
     },
     {
       "name": "lyftr",
@@ -471,7 +481,9 @@
         "networking"
       ],
       "website_url": "https://github.com/miroslavpejic85/mirotalk",
-      "docs_url": "https://github.com/imbue-openhost/bottled-mirotalk-p2p#readme"
+      "docs_url": "https://github.com/imbue-openhost/bottled-mirotalk-p2p#readme",
+      "license": "AGPL-3.0-only",
+      "packaging_license": "MIT"
     },
     {
       "name": "navidrome",
@@ -514,7 +526,9 @@
         "data-liberation"
       ],
       "website_url": "https://nextcloud.com",
-      "docs_url": "https://github.com/imbue-openhost/bottled-nextcloud#readme"
+      "docs_url": "https://github.com/imbue-openhost/bottled-nextcloud#readme",
+      "license": "AGPL-3.0-only",
+      "packaging_license": "MIT"
     },
     {
       "name": "openchamber",
@@ -536,7 +550,9 @@
         "productivity"
       ],
       "website_url": "https://github.com/openchamber/openchamber",
-      "docs_url": "https://github.com/imbue-openhost/bottled-openchamber#readme"
+      "docs_url": "https://github.com/imbue-openhost/bottled-openchamber#readme",
+      "license": "MIT",
+      "packaging_license": "MIT"
     },
     {
       "name": "openclaw",
@@ -615,7 +631,9 @@
         "publishing"
       ],
       "website_url": "https://www.overleaf.com",
-      "docs_url": "https://github.com/imbue-openhost/bottled-overleaf#readme"
+      "docs_url": "https://github.com/imbue-openhost/bottled-overleaf#readme",
+      "license": "AGPL-3.0-only",
+      "packaging_license": "MIT"
     },
     {
       "name": "pihole",
@@ -735,7 +753,9 @@
         "development"
       ],
       "website_url": "https://tangled.org",
-      "docs_url": "https://github.com/imbue-openhost/bottled-tangled#readme"
+      "docs_url": "https://github.com/imbue-openhost/bottled-tangled#readme",
+      "license": "MIT",
+      "packaging_license": "MIT"
     },
     {
       "name": "uptime-kuma",
@@ -776,5 +796,5 @@
       "docs_url": "https://github.com/imbue-openhost/bottled-vaultwarden#readme"
     }
   ],
-  "generated_at": "2026-09-14T15:49:36Z"
+  "generated_at": "2026-10-01T15:55:48Z"
 }
