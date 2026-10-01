@@ -36,7 +36,7 @@ The `name` field is the app's identifier in the catalog: it is used in catalog U
 
 ### License metadata
 
-Declare licenses in the catalog listing, `apps/<name>/app.toml`. The catalog displays the application and packaging licenses independently on app listings and detail pages. Check each value against the application's or packaging repository's license text; one is not inferred from the other.
+Declare licenses in the catalog listing, `apps/<name>/app.toml`. The catalog displays the application and packaging licenses independently only on each app's details page. Check each value against the application's or packaging repository's license text; one is not inferred from the other.
 
 ```toml
 [app]
