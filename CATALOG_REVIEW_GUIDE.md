@@ -40,6 +40,9 @@ review — there is no numeric rating.
 5. **The repo has a LICENSE.** A wrapper keeps a license compatible with what it
    packages (a GPL/AGPL app stays GPL/AGPL); original code can use a permissive
    one.
+   Record the application's license in the catalog entry's `license` field and
+   the packaging's license in `packaging_license`, checking each against its
+   license text where applicable.
 
 6. **Resource limits are accurate.** Memory and CPU limits should match what the
    app really uses — measured, not guessed. Some apps need more memory to build
