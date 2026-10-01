@@ -3,7 +3,6 @@ name = "community-chat"
 title = "Community Chat"
 description = "Matrix Synapse homeserver with a bundled Cinny web client. End-to-end encrypted messaging, owner single sign-on, and a one-click join of the Cloud in a Bottle community space."
 repo_url = "https://github.com/imbue-openhost/bottled-community-chat"
-packaging_license = "MIT"
 website_url = "https://matrix.org"
 docs_url = "https://github.com/imbue-openhost/bottled-community-chat#readme"
 tags = ["messaging", "matrix", "encryption", "federation", "chat"]

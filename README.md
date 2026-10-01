@@ -48,9 +48,7 @@ packaging_license = "MIT"
 repo_url = "https://github.com/example/packaged-app"
 ```
 
-Both fields are optional strings so existing listings and feeds remain compatible. Leading and trailing whitespace is ignored; missing or blank values display as "Not specified". Prefer SPDX identifiers or expressions, such as `MIT`, `Apache-2.0`, or `MIT OR Apache-2.0`; custom license names and descriptions are accepted too. These fields describe catalog metadata and are not deployment settings.
-
-Our original applications and Cloud in a Bottle packaging should be MIT-licensed. Record the upstream application's own license for third-party software. A packaging repository may retain an upstream `LICENSE` while offering MIT terms for its original integration code in `NOTICE` or `LICENSE.packaging`; check the scope of those terms when filling in the two fields.
+Both fields are optional strings so existing listings and feeds remain compatible. Leading and trailing whitespace is ignored; missing or blank values are omitted from the generated feed and display as "Not specified". Prefer SPDX identifiers or expressions, such as `MIT`, `Apache-2.0`, or `MIT OR Apache-2.0`; custom license names and descriptions are accepted too. These fields describe catalog metadata and are not deployment settings.
 
 ## Getting into the catalog
 

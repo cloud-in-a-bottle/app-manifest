@@ -41,10 +41,10 @@ class LicenseMetadataTests(unittest.TestCase):
         )
         return build_feed(str(self.root))["apps"][0]
 
-    def test_existing_entries_have_unspecified_licenses(self):
+    def test_existing_entries_omit_license_metadata(self):
         app = self.build()
-        self.assertEqual(app["license"], "")
-        self.assertEqual(app["packaging_license"], "")
+        self.assertNotIn("license", app)
+        self.assertNotIn("packaging_license", app)
 
     def test_application_and_packaging_are_separate_in_json_feed(self):
         app = self.build('license = "Apache-2.0"\npackaging_license = "MIT"\n')
@@ -57,8 +57,11 @@ class LicenseMetadataTests(unittest.TestCase):
             for value in ("MIT OR Apache-2.0", "LicenseRef-Custom", "Proprietary", ""):
                 with self.subTest(field=field, value=value):
                     app = self.build(f'{field} = "  {value}  "\n')
-                    self.assertEqual(app[field], value)
-                    self.assertEqual(app[other], "")
+                    if value:
+                        self.assertEqual(app[field], value)
+                    else:
+                        self.assertNotIn(field, app)
+                    self.assertNotIn(other, app)
 
     def test_non_string_licenses_fail_with_field_and_filename(self):
         for field in ("license", "packaging_license"):

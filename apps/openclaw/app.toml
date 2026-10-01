@@ -3,7 +3,6 @@ name = "openclaw"
 title = "OpenClaw"
 description = "Open-source personal AI assistant you run on your own devices, reachable from chat apps you already use (WhatsApp, Telegram, Slack, Discord, Signal, and more) and extendable with skills and tools."
 repo_url = "https://github.com/imbue-openhost/bottled-openclaw"
-packaging_license = "MIT"
 website_url = "https://openclaw.ai/"
 docs_url = "https://github.com/imbue-openhost/bottled-openclaw#readme"
 tags = ["ai", "assistant"]

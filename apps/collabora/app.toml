@@ -3,7 +3,6 @@ name = "collabora"
 title = "Collabora"
 description = "Online office suite (Writer, Calc, Impress) with a built-in file manager — upload, edit, and save documents from your browser. Powered by Collabora Online."
 repo_url = "https://github.com/cloud-in-a-bottle/bottled-collabora"
-packaging_license = "MIT"
 website_url = "https://www.collaboraonline.com/"
 docs_url = "https://github.com/cloud-in-a-bottle/bottled-collabora#readme"
 tags = ["office", "documents", "collabora", "libreoffice", "editor", "self-hosted"]

@@ -256,8 +256,6 @@ def build_feed(root: str) -> dict:
             "name": name,
             "title": app.get("title", name),
             "description": app.get("description", ""),
-            "license": license_value(app, "license", app_toml),
-            "packaging_license": license_value(app, "packaging_license", app_toml),
             "repo_url": app["repo_url"],
             "repo_ref": app.get("repo_ref", ""),
             "icon_url": app.get("icon_url", ""),
@@ -266,6 +264,11 @@ def build_feed(root: str) -> dict:
             "website_url": app.get("website_url", ""),
             "docs_url": app.get("docs_url", ""),
         }
+
+        for field in ("license", "packaging_license"):
+            value = license_value(app, field, app_toml)
+            if value:
+                feed_app[field] = value
 
         apps.append(feed_app)
 

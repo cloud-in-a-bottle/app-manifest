@@ -3,9 +3,6 @@ name = "spliit"
 title = "Spliit"
 description = "Minimalist, account-free app for splitting shared expenses with friends and family."
 repo_url = "https://github.com/imbue-openhost/bottled-spliit"
-# Application and packaging: https://github.com/cloud-in-a-bottle/bottled-spliit#license
-license = "MIT"
-packaging_license = "MIT"
 website_url = "https://spliit.app"
 docs_url = "https://github.com/imbue-openhost/bottled-spliit#readme"
 tags = ["expenses", "money", "bill-splitting", "groups"]
