@@ -1,0 +1,9 @@
+[app]
+name = "patzer"
+title = "Patzer"
+description = "Your private Chess.com — self-hosted, AI-coached, family-friendly. Game review of your Chess.com & Lichess games, play vs Stockfish or a friend, lessons + opening trainer, AI coach on your own Ollama/vLLM, EN·BG·ES·DE·RU, one Docker container."
+repo_url = "https://github.com/SikamikanikoBG/patzer"
+website_url = "https://github.com/SikamikanikoBG/patzer"
+docs_url = "https://github.com/SikamikanikoBG/patzer#readme"
+tags = ["chess", "ai", "stockfish", "self-hosted", "family"]
+categories = ["entertainment", "ai"]
