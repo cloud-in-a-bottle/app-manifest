@@ -2,8 +2,8 @@
 name = "lyftr"
 title = "Lyftr"
 description = "Self-hosted workout tracker: log lifts and sets, build programs, and track bodyweight and personal records over time."
-repo_url = "https://github.com/imbue-openhost/bottled-lyftr"
+repo_url = "https://github.com/cloud-in-a-bottle/bottled-lyftr"
 website_url = "https://github.com/Cawlumm/lyftr"
-docs_url = "https://github.com/imbue-openhost/bottled-lyftr#readme"
+docs_url = "https://github.com/cloud-in-a-bottle/bottled-lyftr#readme"
 tags = ["fitness", "workout", "weightlifting", "bodyweight", "health"]
 categories = ["utility"]

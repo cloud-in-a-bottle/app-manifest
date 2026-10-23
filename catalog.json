@@ -7,7 +7,7 @@
       "name": "apple-health-connector",
       "title": "Apple Health Connector",
       "description": "Ports over, collects, and analyzes data from Apple Health",
-      "repo_url": "https://github.com/imbue-openhost/apple-health-connector",
+      "repo_url": "https://github.com/cloud-in-a-bottle/apple-health-connector",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -20,14 +20,14 @@
         "utility",
         "data-liberation"
       ],
-      "website_url": "https://github.com/imbue-openhost/apple-health-connector",
-      "docs_url": "https://github.com/imbue-openhost/apple-health-connector#readme"
+      "website_url": "https://github.com/cloud-in-a-bottle/apple-health-connector",
+      "docs_url": "https://github.com/cloud-in-a-bottle/apple-health-connector#readme"
     },
     {
       "name": "backup",
       "title": "Backup",
       "description": "Back up app data to storage you choose, using restic.",
-      "repo_url": "https://github.com/imbue-openhost/backup",
+      "repo_url": "https://github.com/cloud-in-a-bottle/backup",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -37,8 +37,8 @@
       "categories": [
         "utility"
       ],
-      "website_url": "https://github.com/imbue-openhost/backup",
-      "docs_url": "https://github.com/imbue-openhost/backup#readme",
+      "website_url": "https://github.com/cloud-in-a-bottle/backup",
+      "docs_url": "https://github.com/cloud-in-a-bottle/backup#readme",
       "license": "MIT",
       "packaging_license": "MIT"
     },
@@ -46,7 +46,7 @@
       "name": "bifrost",
       "title": "Bifrost",
       "description": "Runs the Bifrost LLM gateway and exposes an OpenAI-compatible API as a cross-app service",
-      "repo_url": "https://github.com/imbue-openhost/bottled-bifrost",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-bifrost",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -59,13 +59,13 @@
         "utility"
       ],
       "website_url": "https://github.com/maximhq/bifrost",
-      "docs_url": "https://github.com/imbue-openhost/bottled-bifrost#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-bifrost#readme"
     },
     {
       "name": "bluesky",
       "title": "Bluesky",
       "description": "Your own Bluesky account on your own server: an AT Protocol PDS plus the official web client on one domain, federating with the wider network.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-bluesky",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-bluesky",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -81,7 +81,7 @@
         "data-liberation"
       ],
       "website_url": "https://bsky.social",
-      "docs_url": "https://github.com/imbue-openhost/bottled-bluesky#readme",
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-bluesky#readme",
       "license": "MIT",
       "packaging_license": "MIT"
     },
@@ -89,7 +89,7 @@
       "name": "calibre-web",
       "title": "Calibre-Web",
       "description": "Self-hosted web app for browsing, reading, and downloading your ebook library, with an OPDS feed, Kobo sync, and per-user access \u2014 a clean web front end for a Calibre library.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-calibre-web",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-calibre-web",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -105,7 +105,7 @@
         "entertainment"
       ],
       "website_url": "https://github.com/janeczku/calibre-web",
-      "docs_url": "https://github.com/imbue-openhost/bottled-calibre-web#readme",
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-calibre-web#readme",
       "license": "GPL-3.0-or-later",
       "packaging_license": "MIT"
     },
@@ -136,7 +136,7 @@
       "name": "code-completion",
       "title": "Code Completion",
       "description": "Code completion server with model management UI and OpenAI-compatible API.",
-      "repo_url": "https://github.com/imbue-openhost/code-completion",
+      "repo_url": "https://github.com/cloud-in-a-bottle/code-completion",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -151,8 +151,8 @@
         "development",
         "productivity"
       ],
-      "website_url": "https://github.com/imbue-openhost/code-completion",
-      "docs_url": "https://github.com/imbue-openhost/code-completion#readme"
+      "website_url": "https://github.com/cloud-in-a-bottle/code-completion",
+      "docs_url": "https://github.com/cloud-in-a-bottle/code-completion#readme"
     },
     {
       "name": "collabora",
@@ -180,7 +180,7 @@
       "name": "community-chat",
       "title": "Community Chat",
       "description": "Matrix Synapse homeserver with a bundled Cinny web client. End-to-end encrypted messaging, owner single sign-on, and a one-click join of the Cloud in a Bottle community space.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-community-chat",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-community-chat",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -195,13 +195,13 @@
         "privacy"
       ],
       "website_url": "https://matrix.org",
-      "docs_url": "https://github.com/imbue-openhost/bottled-community-chat#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-community-chat#readme"
     },
     {
       "name": "filestash",
       "title": "Filestash",
       "description": "A powerful web-based file management system, compatible with SFTP, S3, and Google Drive",
-      "repo_url": "https://github.com/imbue-openhost/bottled-filestash",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-filestash",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -213,13 +213,13 @@
         "productivity"
       ],
       "website_url": "https://www.filestash.app/",
-      "docs_url": "https://github.com/imbue-openhost/bottled-filestash#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-filestash#readme"
     },
     {
       "name": "forgejo",
       "title": "Forgejo",
       "description": "Self-hosted, lightweight software forge with Git hosting, issues, pull requests, CI/CD, and a package registry \u2014 a Free Software alternative to GitHub.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-forgejo",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-forgejo",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -232,13 +232,13 @@
         "development"
       ],
       "website_url": "https://forgejo.org",
-      "docs_url": "https://github.com/imbue-openhost/bottled-forgejo#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-forgejo#readme"
     },
     {
       "name": "graphhopper",
       "title": "GraphHopper",
       "description": "Self-hosted routing engine built on OpenStreetMap data, with car, bike, and foot navigation profiles and a web map UI offering turn-by-turn directions.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-graphhopper",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-graphhopper",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -254,7 +254,7 @@
         "search"
       ],
       "website_url": "https://www.graphhopper.com",
-      "docs_url": "https://github.com/imbue-openhost/bottled-graphhopper#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-graphhopper#readme"
     },
     {
       "name": "imbue-catalyst",
@@ -280,7 +280,7 @@
       "name": "jellyfin",
       "title": "Jellyfin",
       "description": "Free software media server for streaming your own movies, TV, music, and photos to any device.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-jellyfin",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-jellyfin",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -295,7 +295,7 @@
         "privacy"
       ],
       "website_url": "https://jellyfin.org",
-      "docs_url": "https://github.com/imbue-openhost/bottled-jellyfin#readme",
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-jellyfin#readme",
       "license": "GPL-2.0 (project); GPL-3.0-only (some components)",
       "packaging_license": "MIT"
     },
@@ -303,7 +303,7 @@
       "name": "jitsi",
       "title": "Jitsi Meet",
       "description": "Scalable video conferencing with an SFU (Jitsi Videobridge) \u2014 anyone with the URL can join a meeting.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-jitsi",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-jitsi",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -319,13 +319,13 @@
         "networking"
       ],
       "website_url": "https://jitsi.org",
-      "docs_url": "https://github.com/imbue-openhost/bottled-jitsi#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-jitsi#readme"
     },
     {
       "name": "lila",
       "title": "Lichess",
       "description": "Self-hosted Lichess (Lila) chess server with one-click SSO: play, do puzzles, run tournaments, and analyze games. Pre-seeded so the lobby and leaderboards aren't empty.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-lila",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-lila",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -339,13 +339,13 @@
         "entertainment"
       ],
       "website_url": "https://lichess.org",
-      "docs_url": "https://github.com/imbue-openhost/bottled-lila#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-lila#readme"
     },
     {
       "name": "limesurvey",
       "title": "LimeSurvey",
       "description": "Self-hosted survey and questionnaire platform with a bundled database, for building and running online surveys.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-limesurvey",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-limesurvey",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -360,7 +360,7 @@
         "utility"
       ],
       "website_url": "https://www.limesurvey.org",
-      "docs_url": "https://github.com/imbue-openhost/bottled-limesurvey#readme",
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-limesurvey#readme",
       "license": "GPL-2.0-or-later",
       "packaging_license": "MIT"
     },
@@ -368,7 +368,7 @@
       "name": "lyftr",
       "title": "Lyftr",
       "description": "Self-hosted workout tracker: log lifts and sets, build programs, and track bodyweight and personal records over time.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-lyftr",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-lyftr",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -382,13 +382,13 @@
         "utility"
       ],
       "website_url": "https://github.com/Cawlumm/lyftr",
-      "docs_url": "https://github.com/imbue-openhost/bottled-lyftr#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-lyftr#readme"
     },
     {
       "name": "md-notes",
       "title": "MD Notes",
       "description": "Obsidian-like collaborative markdown notes editor",
-      "repo_url": "https://github.com/imbue-openhost/md-notes",
+      "repo_url": "https://github.com/cloud-in-a-bottle/md-notes",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -401,14 +401,14 @@
         "utility",
         "productivity"
       ],
-      "website_url": "https://github.com/imbue-openhost/md-notes",
-      "docs_url": "https://github.com/imbue-openhost/md-notes#readme"
+      "website_url": "https://github.com/cloud-in-a-bottle/md-notes",
+      "docs_url": "https://github.com/cloud-in-a-bottle/md-notes#readme"
     },
     {
       "name": "mealie",
       "title": "Mealie",
       "description": "Self-hosted recipe manager and meal planner with a per-recipe cooking timeline for iterating on recipes across multiple attempts.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-mealie",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-mealie",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -422,13 +422,13 @@
         "utility"
       ],
       "website_url": "https://mealie.io",
-      "docs_url": "https://github.com/imbue-openhost/bottled-mealie#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-mealie#readme"
     },
     {
       "name": "minecraft",
       "title": "Minecraft",
       "description": "A self-hosted minecraft server runner",
-      "repo_url": "https://github.com/imbue-openhost/bottled-minecraft",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-minecraft",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -438,14 +438,14 @@
       "categories": [
         "entertainment"
       ],
-      "website_url": "https://github.com/imbue-openhost/bottled-minecraft",
-      "docs_url": "https://github.com/imbue-openhost/bottled-minecraft#readme"
+      "website_url": "https://github.com/cloud-in-a-bottle/bottled-minecraft",
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-minecraft#readme"
     },
     {
       "name": "miniflux",
       "title": "Miniflux",
       "description": "Minimalist, opinionated RSS/Atom feed reader focused on readability and privacy, with keyboard-driven navigation and automatic tracker removal.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-miniflux",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-miniflux",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -459,13 +459,13 @@
         "utility"
       ],
       "website_url": "https://miniflux.app",
-      "docs_url": "https://github.com/imbue-openhost/bottled-miniflux#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-miniflux#readme"
     },
     {
       "name": "mirotalk-p2p",
       "title": "MiroTalk P2P",
       "description": "Open-source WebRTC video conferencing where browsers connect peer-to-peer for real-time audio and video; the server only handles signaling, never media. Includes screen sharing, chat, a collaborative whiteboard, and file sharing.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-mirotalk-p2p",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-mirotalk-p2p",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -481,7 +481,7 @@
         "networking"
       ],
       "website_url": "https://github.com/miroslavpejic85/mirotalk",
-      "docs_url": "https://github.com/imbue-openhost/bottled-mirotalk-p2p#readme",
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-mirotalk-p2p#readme",
       "license": "AGPL-3.0-only",
       "packaging_license": "MIT"
     },
@@ -489,7 +489,7 @@
       "name": "navidrome",
       "title": "Navidrome",
       "description": "Modern music server and streamer compatible with Subsonic/Airsonic clients.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-navidrome",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-navidrome",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -502,13 +502,13 @@
         "privacy"
       ],
       "website_url": "https://www.navidrome.org",
-      "docs_url": "https://github.com/imbue-openhost/bottled-navidrome#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-navidrome#readme"
     },
     {
       "name": "nextcloud",
       "title": "Nextcloud",
       "description": "Self-hosted files, calendar, and contacts platform with sync clients, sharing, and a large app ecosystem.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-nextcloud",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-nextcloud",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -526,7 +526,7 @@
         "data-liberation"
       ],
       "website_url": "https://nextcloud.com",
-      "docs_url": "https://github.com/imbue-openhost/bottled-nextcloud#readme",
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-nextcloud#readme",
       "license": "AGPL-3.0-only",
       "packaging_license": "MIT"
     },
@@ -534,7 +534,7 @@
       "name": "openchamber",
       "title": "OpenChamber",
       "description": "Web workspace for running and supervising AI coding agents, with session goals, diff review, GitHub workflows, and a built-in terminal.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-openchamber",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-openchamber",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -550,7 +550,7 @@
         "productivity"
       ],
       "website_url": "https://github.com/openchamber/openchamber",
-      "docs_url": "https://github.com/imbue-openhost/bottled-openchamber#readme",
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-openchamber#readme",
       "license": "MIT",
       "packaging_license": "MIT"
     },
@@ -558,7 +558,7 @@
       "name": "openclaw",
       "title": "OpenClaw",
       "description": "Open-source personal AI assistant you run on your own devices, reachable from chat apps you already use (WhatsApp, Telegram, Slack, Discord, Signal, and more) and extendable with skills and tools.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-openclaw",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-openclaw",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -570,13 +570,13 @@
         "productivity"
       ],
       "website_url": "https://openclaw.ai/",
-      "docs_url": "https://github.com/imbue-openhost/bottled-openclaw#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-openclaw#readme"
     },
     {
       "name": "openweb-ui",
       "title": "Open WebUI",
       "description": "Self-hosted ChatGPT-style interface for local and remote LLMs (Ollama, OpenAI, Anthropic, etc).",
-      "repo_url": "https://github.com/imbue-openhost/bottled-openweb-ui",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-openweb-ui",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -590,13 +590,13 @@
         "productivity"
       ],
       "website_url": "https://openwebui.com",
-      "docs_url": "https://github.com/imbue-openhost/bottled-openweb-ui#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-openweb-ui#readme"
     },
     {
       "name": "oura-connector",
       "title": "Oura Connector",
       "description": "Imports, stores, and displays personal health data from Oura smart rings \u2014 including sleep, activity, and readiness metrics \u2014 and exposes the collected data through an API for other apps.",
-      "repo_url": "https://github.com/imbue-openhost/oura-connector",
+      "repo_url": "https://github.com/cloud-in-a-bottle/oura-connector",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -608,14 +608,14 @@
         "utility",
         "data-liberation"
       ],
-      "website_url": "https://github.com/imbue-openhost/oura-connector",
-      "docs_url": "https://github.com/imbue-openhost/oura-connector#readme"
+      "website_url": "https://github.com/cloud-in-a-bottle/oura-connector",
+      "docs_url": "https://github.com/cloud-in-a-bottle/oura-connector#readme"
     },
     {
       "name": "overleaf",
       "title": "Overleaf",
       "description": "Overleaf Community Edition: a self-hosted, collaborative online LaTeX editor with real-time editing and in-browser PDF compilation, with a bundled database.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-overleaf",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-overleaf",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -631,7 +631,7 @@
         "publishing"
       ],
       "website_url": "https://www.overleaf.com",
-      "docs_url": "https://github.com/imbue-openhost/bottled-overleaf#readme",
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-overleaf#readme",
       "license": "AGPL-3.0-only",
       "packaging_license": "MIT"
     },
@@ -639,7 +639,7 @@
       "name": "pihole",
       "title": "Pi-hole",
       "description": "Network-wide ad blocker that blocks ads and trackers at the DNS level for every device on your network, with a web dashboard for statistics, query logs, and allow/deny list management.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-pihole",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-pihole",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -654,13 +654,13 @@
         "productivity"
       ],
       "website_url": "https://pi-hole.net",
-      "docs_url": "https://github.com/imbue-openhost/bottled-pihole#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-pihole#readme"
     },
     {
       "name": "redlib",
       "title": "Redlib",
       "description": "Private front-end for Reddit. Browse posts and comments without JavaScript, ads, tracking, or a Reddit account; all requests are proxied through the server.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-redlib",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-redlib",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -674,7 +674,7 @@
         "entertainment"
       ],
       "website_url": "https://github.com/redlib-org/redlib",
-      "docs_url": "https://github.com/imbue-openhost/bottled-redlib#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-redlib#readme"
     },
     {
       "name": "sculptor",
@@ -700,7 +700,7 @@
       "name": "searxng",
       "title": "SearXNG",
       "description": "Privacy-respecting metasearch engine that aggregates results from 70+ search services.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-searxng",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-searxng",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -714,13 +714,13 @@
         "utility"
       ],
       "website_url": "https://docs.searxng.org",
-      "docs_url": "https://github.com/imbue-openhost/bottled-searxng#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-searxng#readme"
     },
     {
       "name": "spliit",
       "title": "Spliit",
       "description": "Minimalist, account-free app for splitting shared expenses with friends and family.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-spliit",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-spliit",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -733,13 +733,13 @@
         "utility"
       ],
       "website_url": "https://spliit.app",
-      "docs_url": "https://github.com/imbue-openhost/bottled-spliit#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-spliit#readme"
     },
     {
       "name": "tangled",
       "title": "Tangled Knot",
       "description": "Self-hosted Tangled knot: the git data server for Tangled (tangled.org), the AT-Protocol-based social coding platform. Host your own repositories and federate with the Tangled network \u2014 your identity is your ATProto/Bluesky DID, the AppView provides the web UI and issues/PRs as ATProto records, and your knot holds the actual git data. Clone over HTTPS, push over SSH.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-tangled",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-tangled",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -753,7 +753,7 @@
         "development"
       ],
       "website_url": "https://tangled.org",
-      "docs_url": "https://github.com/imbue-openhost/bottled-tangled#readme",
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-tangled#readme",
       "license": "MIT",
       "packaging_license": "MIT"
     },
@@ -761,7 +761,7 @@
       "name": "uptime-kuma",
       "title": "Uptime Kuma",
       "description": "Self-hosted uptime monitoring with HTTP, TCP, DNS, and ping checks plus status pages.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-uptime-kuma",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-uptime-kuma",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -774,13 +774,13 @@
         "networking"
       ],
       "website_url": "https://uptime.kuma.pet",
-      "docs_url": "https://github.com/imbue-openhost/bottled-uptime-kuma#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-uptime-kuma#readme"
     },
     {
       "name": "vaultwarden",
       "title": "VaultWarden",
       "description": "An alternative, open-source password manager server written in Rust that implements the Bitwarden API and works with the official Bitwarden client apps.",
-      "repo_url": "https://github.com/imbue-openhost/bottled-vaultwarden",
+      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-vaultwarden",
       "repo_ref": "",
       "icon_url": "",
       "tags": [
@@ -793,7 +793,7 @@
         "utility"
       ],
       "website_url": "https://github.com/dani-garcia/vaultwarden",
-      "docs_url": "https://github.com/imbue-openhost/bottled-vaultwarden#readme"
+      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-vaultwarden#readme"
     }
   ],
   "generated_at": "2026-10-01T15:55:48Z"
