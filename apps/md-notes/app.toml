@@ -2,8 +2,8 @@
 name = "md-notes"
 title = "MD Notes"
 description = "Obsidian-like collaborative markdown notes editor"
-repo_url = "https://github.com/imbue-openhost/md-notes"
-website_url = "https://github.com/imbue-openhost/md-notes"
-docs_url = "https://github.com/imbue-openhost/md-notes#readme"
+repo_url = "https://github.com/cloud-in-a-bottle/md-notes"
+website_url = "https://github.com/cloud-in-a-bottle/md-notes"
+docs_url = "https://github.com/cloud-in-a-bottle/md-notes#readme"
 tags = ["markdown", "notes", "sharing"]
 categories = ["privacy", "utility", "productivity"]

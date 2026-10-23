@@ -1,6 +1,6 @@
 # app-manifest
 
-The official Cloud in a Bottle app catalog feed. Consumed by [`openhost-catalog`](https://github.com/imbue-openhost/openhost-catalog) to populate its app listing.
+The official Cloud in a Bottle app catalog feed. Consumed by [`app-catalog`](https://github.com/cloud-in-a-bottle/app-catalog) to populate its app listing.
 
 This repo is data-only. The Go/Python code that reads this feed lives elsewhere.
 

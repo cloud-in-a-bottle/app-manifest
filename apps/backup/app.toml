@@ -2,10 +2,10 @@
 name = "backup"
 title = "Backup"
 description = "Back up app data to storage you choose, using restic."
-repo_url = "https://github.com/imbue-openhost/backup"
+repo_url = "https://github.com/cloud-in-a-bottle/backup"
 license = "MIT"
 packaging_license = "MIT"
-website_url = "https://github.com/imbue-openhost/backup"
-docs_url = "https://github.com/imbue-openhost/backup#readme"
+website_url = "https://github.com/cloud-in-a-bottle/backup"
+docs_url = "https://github.com/cloud-in-a-bottle/backup#readme"
 tags = ["backup", "data"]
 categories = ["utility"]

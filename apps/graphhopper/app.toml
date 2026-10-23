@@ -2,8 +2,8 @@
 name = "graphhopper"
 title = "GraphHopper"
 description = "Self-hosted routing engine built on OpenStreetMap data, with car, bike, and foot navigation profiles and a web map UI offering turn-by-turn directions."
-repo_url = "https://github.com/imbue-openhost/bottled-graphhopper"
+repo_url = "https://github.com/cloud-in-a-bottle/bottled-graphhopper"
 website_url = "https://www.graphhopper.com"
-docs_url = "https://github.com/imbue-openhost/bottled-graphhopper#readme"
+docs_url = "https://github.com/cloud-in-a-bottle/bottled-graphhopper#readme"
 tags = ["maps", "routing", "navigation", "osm", "directions"]
 categories = ["privacy", "utility", "search"]
