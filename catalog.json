@@ -505,32 +505,6 @@
       "docs_url": "https://github.com/cloud-in-a-bottle/bottled-navidrome#readme"
     },
     {
-      "name": "nextcloud",
-      "title": "Nextcloud",
-      "description": "Self-hosted files, calendar, and contacts platform with sync clients, sharing, and a large app ecosystem.",
-      "repo_url": "https://github.com/cloud-in-a-bottle/bottled-nextcloud",
-      "repo_ref": "",
-      "icon_url": "",
-      "tags": [
-        "files",
-        "storage",
-        "calendar",
-        "contacts",
-        "sync",
-        "sharing"
-      ],
-      "categories": [
-        "productivity",
-        "privacy",
-        "utility",
-        "data-liberation"
-      ],
-      "website_url": "https://nextcloud.com",
-      "docs_url": "https://github.com/cloud-in-a-bottle/bottled-nextcloud#readme",
-      "license": "AGPL-3.0-only",
-      "packaging_license": "MIT"
-    },
-    {
       "name": "openchamber",
       "title": "OpenChamber",
       "description": "Web workspace for running and supervising AI coding agents, with session goals, diff review, GitHub workflows, and a built-in terminal.",
@@ -796,5 +770,5 @@
       "docs_url": "https://github.com/cloud-in-a-bottle/bottled-vaultwarden#readme"
     }
   ],
-  "generated_at": "2026-10-01T15:55:48Z"
+  "generated_at": "2026-11-03T04:36:23Z"
 }
